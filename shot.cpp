@@ -116,21 +116,25 @@ void drawShot()
 		if (leaf1[i].enable == true)
 		{
 			DrawCircle(leaf1[i].x, leaf1[i].y, leaf1[i].r, leaf1[i].color, false);
+			DrawGraph(leaf1[i].x-11, leaf1[i].y-13, leafimg, true);
 		}
 
 		if (leaf2[i].enable == true)
 		{
 			DrawCircle(leaf2[i].x, leaf2[i].y, leaf2[i].r, leaf2[i].color, false);
+			DrawGraph(leaf2[i].x-11, leaf2[i].y-13, leafimg, true);
 		}
 
 		if (leaf3[i].enable == true)
 		{
 			DrawCircle(leaf3[i].x, leaf3[i].y, leaf3[i].r, leaf3[i].color, false);
+			DrawGraph(leaf3[i].x-11, leaf3[i].y-13, leafimg, true);
 		}
 
 		if (leaf4[i].enable == true)
 		{
 			DrawCircle(leaf4[i].x, leaf4[i].y, leaf4[i].r, leaf4[i].color, false);
+			DrawGraph(leaf4[i].x-11, leaf4[i].y-13, leafimg, true);
 		}
 	}
 }
