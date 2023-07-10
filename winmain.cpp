@@ -49,6 +49,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		if (scene == Game)
 		{
 			update();//更新処理の呼び出し
+
+			if (clearflag1 == true)
+			{
+				scene = A;
+			}
 		}
 		if (scene == A)
 		{
@@ -141,5 +146,12 @@ void draw()
 
 void a()
 {
-
+	if (clearflag1 == true)
+	{
+		DrawFormatString(350, 300, GetColor(255, 255, 255), "1面クリア！Enterで2面へ");
+	}
+	if (clearflag1 == true)
+	{
+		DrawFormatString(350, 300, GetColor(255, 255, 255), "2面クリア！Enterで3面へ");
+	}
 }

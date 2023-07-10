@@ -12,6 +12,9 @@ extern bool gameOverFlag;//ƒQ[ƒ€ƒI[ƒo[”»’è
 En enemy[EnemyNum];//“G
 
 int explodese;//”š”­SE
+
+extern bool clearflag1 = false;
+
 //“G‚Ì‰Šú‰»
 void initstage1Enemy()
 {
@@ -322,6 +325,11 @@ void updatestage1Enemy()
 				if (gameOverFlag == false) {
 					score++;//‚PƒtƒŒ[ƒ€‚²‚Æ‚É‚P“_‰ÁŽZ
 				}
+			}
+
+			if (enemy[0].hp == 0)
+			{
+				clearflag1 = true;//ƒNƒŠƒAƒtƒ‰ƒO‚ðƒIƒ“‚É‚·‚é
 			}
 			//e‚ð—â‚â‚·ˆ—
 			if (enemy[i].cooltime > 0) {

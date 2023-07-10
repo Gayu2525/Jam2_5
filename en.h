@@ -3,6 +3,9 @@
 extern int playerimg;
 extern int shotimg;
 extern int leafimg;
+extern bool clearflag1;//1面のクリアフラグ
+extern bool clearflag2;//2面のクリアフラグ
+extern bool clearflag3;//3面のクリアフラグ
 enum EnemyType
 {
 	ENEMY1,//敵タイプ１
