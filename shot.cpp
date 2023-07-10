@@ -17,6 +17,15 @@ void initShot()
 		shot[i].enable = false;
 
 		shotimg = LoadGraph("—‰Ô¶.png");
+
+		leaf[i].r = 5;
+		leaf[i].color = GetColor(255, 255, 0);
+		leaf[i].fill = true;
+		leaf[i].vx = 5.0;
+		leaf[i].vy = 2.5;
+		leaf[i].enable = false;
+
+		shotimg = LoadGraph("—t‚Á‚Ï.png");
 	}
 }
 //’e‚ÌXV
@@ -30,6 +39,14 @@ void updateShot()
 			shot[i].y = shot[i].y + shot[i].vy;
 			if (shot[i].x >= 800) {
 				shot[i].enable = false;
+			}
+		}
+
+		if (leaf[i].enable == true) {
+			leaf[i].x = leaf[i].x + leaf[i].vx;
+			leaf[i].y = leaf[i].y + leaf[i].vy;
+			if (leaf[i].x >= 800 || leaf[i].y >= 600) {
+				leaf[i].enable = false;
 			}
 		}
 	}

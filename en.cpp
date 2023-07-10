@@ -4,6 +4,7 @@
 
 int playerimg;//ƒvƒŒƒCƒ„[‰æ‘œ
 int shotimg;
+int leafimg;
 
 //‰~‚Ì“–‚½‚è”»’èŠÖ”
 bool isHit(En en1, En en2)

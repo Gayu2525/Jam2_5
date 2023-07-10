@@ -18,7 +18,6 @@ void initPlayer()
 	player.cooltime = 0;
 
 	playerimg = LoadGraph("player_1.png");
-
 }
 
 //プレイヤーの更新
@@ -73,6 +72,14 @@ void updatePlayer()
 				shot[i].enable = true;
 				player.cooltime = 50;//連射速度　小さいほど連射できる
 				PlaySoundMem(shotse, DX_PLAYTYPE_BACK);
+				break;
+			}
+			//撃てる弾をみつける
+			if (leaf[i].enable == false) {
+				//弾を撃つ
+				leaf[i].x = player.x;
+				leaf[i].y = player.y;
+				leaf[i].enable = true;
 				break;
 			}
 		}

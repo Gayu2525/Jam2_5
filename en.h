@@ -2,6 +2,7 @@
 #include <map>
 extern int playerimg;
 extern int shotimg;
+extern int leafimg;
 enum EnemyType
 {
 	ENEMY1,//“Gƒ^ƒCƒv‚P
