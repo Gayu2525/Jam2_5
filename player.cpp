@@ -73,12 +73,34 @@ void updatePlayer()
 				player.cooltime = 50;//連射速度　小さいほど連射できる
 				PlaySoundMem(shotse, DX_PLAYTYPE_BACK);
 			}
-			//撃てる弾をみつける
-			if (leaf[i].enable == false && leafcooltime <= 0) {
-				//弾を撃つ
-				leaf[i].x = player.x;
-				leaf[i].y = player.y;
-				leaf[i].enable = true;
+			
+
+			if (leaf1[i].enable == false && leafcooltime <= 0) {
+				
+				leaf1[i].x = player.x;
+				leaf1[i].y = player.y;
+				leaf1[i].enable = true;
+			}
+
+			if (leaf2[i].enable == false && leafcooltime <= 0) {
+
+				leaf2[i].x = player.x;
+				leaf2[i].y = player.y;
+				leaf2[i].enable = true;
+			}
+
+			if (leaf3[i].enable == false && leafcooltime <= 0) {
+
+				leaf3[i].x = player.x;
+				leaf3[i].y = player.y;
+				leaf3[i].enable = true;
+			}
+
+			if (leaf4[i].enable == false && leafcooltime <= 0) {
+
+				leaf4[i].x = player.x;
+				leaf4[i].y = player.y;
+				leaf4[i].enable = true;
 				leafcooltime = 20;
 				break;
 			}
