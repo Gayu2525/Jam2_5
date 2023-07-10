@@ -3,7 +3,8 @@
 #include "DxLib.h"
 #include "shot.h"
 
-En shot[ShotNum];//’e
+En shot[ShotNum];//—‰Ô¶
+En leaf[ShotNum];//Thousant Leaf
 //’e‚Ì‰Šú‰»
 void initShot()
 {

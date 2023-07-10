@@ -71,7 +71,7 @@ void updatePlayer()
 				shot[i].x = player.x;
 				shot[i].y = player.y;
 				shot[i].enable = true;
-				player.cooltime = 30;//連射速度　小さいほど連射できる
+				player.cooltime = 50;//連射速度　小さいほど連射できる
 				PlaySoundMem(shotse, DX_PLAYTYPE_BACK);
 				break;
 			}
