@@ -2,7 +2,6 @@
 #include "game.h"
 //ゲーム関連の情報
 int score = 0;//点数
-bool gameOverFlag = false;//ゲームオーバー判定
 
 //ゲームの初期化
 void initGame()

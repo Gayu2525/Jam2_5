@@ -47,11 +47,12 @@ void updateEnemyShot()
 			{
 				enemyshot[i].enable = false;
 			}
-			if (isHit(player, enemyshot[i]))
+			if (isHit(player, enemyshot[i])&&player.inv==0)
 			{
 				//当たっている
 				player.color = enemyshot[i].color;
-				gameOverFlag = true;//ゲームオーバーフラグを立てる
+				player.hp--;
+				player.inv = 150;
 				enemyshot[i].enable = false;
 			}
 		}

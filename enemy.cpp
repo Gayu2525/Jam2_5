@@ -238,11 +238,11 @@ void updateEnemy()
 				enemy[i].cooltime = 30;
 			}
 
-			if (isHit(player, enemy[i]))
+			if (isHit(player, enemy[i]) && player.hp == 0)
 			{
 				//当たっている
-				player.color = enemy[i].color;
-				gameOverFlag = true;//ゲームオーバーフラグを立てる
+				player.hp--;
+				player.inv = 150;
 			}
 
 			for (int j = 0; j < ShotNum; j++) {

@@ -3,6 +3,9 @@
 #include "DxLib.h"
 #include "shot.h"
 #include "player.h"
+#include"game.h"
+
+extern bool gameOverFlag = false;//ゲームオーバー判定
 
 En player;//プレイヤー
 int shotse;//ショットSE
@@ -17,6 +20,9 @@ void initPlayer()
 	player.color = GetColor(255, 255, 255);
 	player.fill = true;
 	player.cooltime = 0;
+
+	player.hp = 10;
+	player.inv = 0;
 
 	playerimg = LoadGraph("player_1.png");
 }
@@ -113,12 +119,23 @@ void updatePlayer()
 	if (leafcooltime > 0) {
 		leafcooltime--;
 	}
+
+	if (player.hp <= 0) {
+		gameOverFlag = true;//ゲームオーバーフラグを立てる
+	}
+	if (player.inv > 0) {
+		player.inv--;
+	}
+
+
 }
 
 //プレイヤーの描画
 void drawPlayer()
 {
-	DrawCircle(player.x, player.y, player.r, player.color, false);
-	
-	DrawGraph(player.x - 115, player.y - 60, playerimg, true);
+	if (player.inv % 5 < 2) {
+		DrawCircle(player.x, player.y, player.r, player.color, false);
+
+		DrawGraph(player.x - 115, player.y - 60, playerimg, true);
+	}
 }
