@@ -34,6 +34,9 @@ struct En
 	int counter;
 	int spawnTiming;//出現タイミング
 	std::map<int, MovePattern> pattern;
+
+	int hp;//体力
+	int inv;//無敵時間
 };
 
 bool isHit(En en1, En en2);//当たり判定関数
