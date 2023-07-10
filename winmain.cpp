@@ -74,7 +74,7 @@ void init()
 	//背景スプライトの初期化
 	initBg();
 	//タイトル画像読み込み
-	TitleLogo = LoadGraph("title.png");
+	TitleLogo = LoadGraph("タイトル.png");
 	PushEnterKey = LoadGraph("pushenter.png");
 	//タイトルBGM再生
 	PlayMusic("maou_game_boss03.mp3", DX_PLAYTYPE_LOOP);

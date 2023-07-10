@@ -16,6 +16,9 @@ int explodese;//”š”­SE
 void initEnemy()
 {
 	explodese = LoadSoundMem("maou_se_battle_explosion06.mp3");
+
+	/*
+	
 	//1‘Ì–Ú‚Ì“G
 	enemy[0].x = 900;
 	enemy[0].y = 200;
@@ -129,6 +132,8 @@ void initEnemy()
 	enemy[9].vx = -2.0;
 	enemy[9].vy = 0.0;
 	enemy[9].type = ENEMY5;
+	*/
+
 }
 //^‚Á‚·‚®’e‚ğŒ‚‚Â
 void straightShot(int rad, En ene, int shifty)
