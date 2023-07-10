@@ -21,7 +21,7 @@ void initShot()
 		leaf[i].r = 5;
 		leaf[i].color = GetColor(255, 255, 0);
 		leaf[i].fill = true;
-		leaf[i].vx = 5.0;
+		leaf[i].vx = 3.0;
 		leaf[i].vy = 2.5;
 		leaf[i].enable = false;
 

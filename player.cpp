@@ -88,6 +88,9 @@ void updatePlayer()
 	if (player.cooltime > 0) {
 		player.cooltime--;
 	}
+	if (leafcooltime > 0) {
+		leafcooltime--;
+	}
 }
 
 //ƒvƒŒƒCƒ„[‚Ì•`‰æ
