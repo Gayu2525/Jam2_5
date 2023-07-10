@@ -6,6 +6,7 @@
 
 En player;//プレイヤー
 int shotse;//ショットSE
+int leafcooltime = 0;
 //プレイヤーの初期化
 void initPlayer()
 {
@@ -58,28 +59,27 @@ void updatePlayer()
 	}
 
 	//弾を撃つ処理
-	if (CheckHitKey(KEY_INPUT_Z) == 1 &&
-		player.cooltime <= 0)
+	if (CheckHitKey(KEY_INPUT_N) == 1)
 	{
 		//弾が無効なときのみ初期値をセットし有効にする
 		for (int i = 0; i < ShotNum; i++)
 		{
 			//撃てる弾をみつける
-			if (shot[i].enable == false) {
+			if (shot[i].enable == false && player.cooltime <= 0) {
 				//弾を撃つ
 				shot[i].x = player.x;
 				shot[i].y = player.y;
 				shot[i].enable = true;
 				player.cooltime = 50;//連射速度　小さいほど連射できる
 				PlaySoundMem(shotse, DX_PLAYTYPE_BACK);
-				break;
 			}
 			//撃てる弾をみつける
-			if (leaf[i].enable == false) {
+			if (leaf[i].enable == false && leafcooltime <= 0) {
 				//弾を撃つ
 				leaf[i].x = player.x;
 				leaf[i].y = player.y;
 				leaf[i].enable = true;
+				leafcooltime = 10;
 				break;
 			}
 		}

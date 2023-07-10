@@ -25,7 +25,7 @@ void initShot()
 		leaf[i].vy = 2.5;
 		leaf[i].enable = false;
 
-		shotimg = LoadGraph("葉っぱ.png");
+		leafimg = LoadGraph("葉っぱ.png");
 	}
 }
 //弾の更新
@@ -57,12 +57,13 @@ void drawShot()
 	for (int i = 0; i < ShotNum; i++) {
 		if (shot[i].enable == true)
 		{
-			SetDrawBlendMode(DX_BLENDMODE_ALPHA, 127);//半透明
-			DrawCircle(shot[i].x, shot[i].y, shot[i].r, shot[i].color, shot[i].fill);
-			SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);//不透明
-			DrawCircle(shot[i].x, shot[i].y, shot[i].r * 0.5, shot[i].color, shot[i].fill);
+			DrawCircle(shot[i].x, shot[i].y, shot[i].r, shot[i].color, false);
 
 			DrawGraph(shot[i].x-40, shot[i].y - 35, shotimg, true);
+		}
+		if (leaf[i].enable == true)
+		{
+			DrawCircle(leaf[i].x, leaf[i].y, leaf[i].r, leaf[i].color, false);
 		}
 	}
 }
