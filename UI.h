@@ -1,2 +1,2 @@
 #pragma once
-#include"player.h"
+void drawUI();
