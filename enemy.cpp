@@ -18,7 +18,6 @@ void initEnemy()
 	explodese = LoadSoundMem("maou_se_battle_explosion06.mp3");
 
 	/*
-	
 	//1‘Ì–Ú‚Ì“G
 	enemy[0].x = 900;
 	enemy[0].y = 200;
@@ -256,13 +255,17 @@ void updateEnemy()
 					if (isHit(shot[j], enemy[i]))
 					{
 						//“–‚½‚Á‚Ä‚¢‚é
-						enemy[i].enable = false;//“G‚ğ–³Œø
+						enemy[i].hp--;//“G‚Éƒ_ƒ[ƒW
 						shot[j].enable = false;//’e‚ğ–³Œø
-						PlaySoundMem(explodese, DX_PLAYTYPE_BACK);
 
-						explosion(enemy[i]);//”š”­
-						if (gameOverFlag == false) {
-							score++;//‚PƒtƒŒ[ƒ€‚²‚Æ‚É‚P“_‰ÁZ
+						//“G‚ÌHP‚ª0‚É‚È‚Á‚½‚ç
+						if (enemy[i].hp == 0) {
+							enemy[i].enable = false;
+							PlaySoundMem(explodese, DX_PLAYTYPE_BACK);
+							explosion(enemy[i]);//”š”­
+							if (gameOverFlag == false) {
+								score++;//‚PƒtƒŒ[ƒ€‚²‚Æ‚É‚P“_‰ÁZ
+							}
 						}
 						break;
 					}
