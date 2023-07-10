@@ -79,7 +79,7 @@ void updatePlayer()
 				leaf[i].x = player.x;
 				leaf[i].y = player.y;
 				leaf[i].enable = true;
-				leafcooltime = 10;
+				leafcooltime = 20;
 				break;
 			}
 		}
