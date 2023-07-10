@@ -109,10 +109,7 @@ void update()
 	updateShot();
 	updateEnemyShot();
 	//敵の更新
-	if (bossflag1 == false)
-	{
-		updatestage1Enemy();
-	}
+	updatestage1Enemy();
 	//エフェクトの更新
 	updateEffect();
 	//背景スプライトの更新

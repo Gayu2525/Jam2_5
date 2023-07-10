@@ -17,6 +17,17 @@ void initstage1Enemy()
 {
 	explodese = LoadSoundMem("maou_se_battle_explosion06.mp3");
 
+	//ƒ{ƒXi‰¼j
+	enemy[0].x = 600;
+	enemy[0].y = 200;
+	enemy[0].r = 30;
+	enemy[0].color = GetColor(255, 0, 0);
+	enemy[0].fill = true;
+	enemy[0].enable = true;
+	enemy[0].vx = 0.0;
+	enemy[0].vy = 0.0;
+	enemy[0].type = ENEMY1;
+	enemy[0].hp = 1;
 
 	/*
 	//1‘Ì–Ú‚Ì“G
@@ -258,18 +269,58 @@ void updatestage1Enemy()
 						//“–‚½‚Á‚Ä‚¢‚é
 						enemy[i].hp--;//“G‚Éƒ_ƒ[ƒW
 						shot[j].enable = false;//’e‚ğ–³Œø
-
-						//“G‚ÌHP‚ª0‚É‚È‚Á‚½‚ç
-						if (enemy[i].hp == 0) {
-							enemy[i].enable = false;
-							PlaySoundMem(explodese, DX_PLAYTYPE_BACK);
-							explosion(enemy[i]);//”š”­
-							if (gameOverFlag == false) {
-								score++;//‚PƒtƒŒ[ƒ€‚²‚Æ‚É‚P“_‰ÁZ
-							}
-						}
-						break;
+						//break;
 					}
+				}
+
+				if (leaf1[j].enable == true) {
+					if (isHit(leaf1[j], enemy[i]))
+					{
+						//“–‚½‚Á‚Ä‚¢‚é
+						enemy[i].hp--;//“G‚Éƒ_ƒ[ƒW
+						leaf1[j].enable = false;//’e‚ğ–³Œø
+						//break;
+					}
+				}
+
+				if (leaf2[j].enable == true) {
+					if (isHit(leaf2[j], enemy[i]))
+					{
+						//“–‚½‚Á‚Ä‚¢‚é
+						enemy[i].hp--;//“G‚Éƒ_ƒ[ƒW
+						leaf2[j].enable = false;//’e‚ğ–³Œø
+						//break;
+					}
+				}
+
+				if (leaf3[j].enable == true) {
+					if (isHit(leaf3[j], enemy[i]))
+					{
+						//“–‚½‚Á‚Ä‚¢‚é
+						enemy[i].hp--;//“G‚Éƒ_ƒ[ƒW
+						leaf3[j].enable = false;//’e‚ğ–³Œø
+						//break;
+					}
+				}
+
+				if (leaf4[j].enable == true) {
+					if (isHit(leaf4[j], enemy[i]))
+					{
+						//“–‚½‚Á‚Ä‚¢‚é
+						enemy[i].hp--;//“G‚Éƒ_ƒ[ƒW
+						leaf4[j].enable = false;//’e‚ğ–³Œø
+						//break;
+					}
+				}
+
+			}
+			//“G‚ÌHP‚ª0‚É‚È‚Á‚½‚ç
+			if (enemy[i].hp == 0) {
+				enemy[i].enable = false;
+				PlaySoundMem(explodese, DX_PLAYTYPE_BACK);
+				explosion(enemy[i]);//”š”­
+				if (gameOverFlag == false) {
+					score++;//‚PƒtƒŒ[ƒ€‚²‚Æ‚É‚P“_‰ÁZ
 				}
 			}
 			//e‚ğ—â‚â‚·ˆ—
