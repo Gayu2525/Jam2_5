@@ -25,21 +25,21 @@ void initPlayer()
 void updatePlayer()
 {
 	//プレイヤーを動かす
-	if (CheckHitKey(KEY_INPUT_RIGHT) == 1)
+	if (CheckHitKey(KEY_INPUT_D) == 1)
 	{
-		player.x = player.x + 1.0;
+		player.x = player.x + 3.0;
 	}
-	if (CheckHitKey(KEY_INPUT_LEFT) == 1)
+	if (CheckHitKey(KEY_INPUT_A) == 1)
 	{
-		player.x = player.x - 1.0;
+		player.x = player.x - 3.0;
 	}
-	if (CheckHitKey(KEY_INPUT_UP) == 1)
+	if (CheckHitKey(KEY_INPUT_W) == 1)
 	{
-		player.y = player.y - 1.0;
+		player.y = player.y - 3.0;
 	}
-	if (CheckHitKey(KEY_INPUT_DOWN) == 1)
+	if (CheckHitKey(KEY_INPUT_S) == 1)
 	{
-		player.y = player.y + 1.0;
+		player.y = player.y + 3.0;
 	}
 	if (player.x < 0) {
 		//もし左端に出たら
@@ -86,6 +86,6 @@ void updatePlayer()
 //プレイヤーの描画
 void drawPlayer()
 {
-	//DrawCircle(player.x, player.y, player.r, player.color, player.fill);
-	DrawGraph(player.x - 29, player.y - 24, playerimg, true);
+	DrawCircle(player.x, player.y, player.r, player.color, false);
+	DrawGraph(player.x - 115, player.y - 60, playerimg, true);
 }
