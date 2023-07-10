@@ -2,6 +2,7 @@
 #include "en.h"
 const int EnemyNum = 10;//“G‚Ì”
 extern En enemy[EnemyNum];//“G
+extern bool bossflag1 = false;
 
 void initstage1Enemy();//“G‚Ì‰Šú‰»
 void updatestage1Enemy();//“G‚ÌXV

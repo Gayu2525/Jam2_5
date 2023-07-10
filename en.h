@@ -38,9 +38,6 @@ struct En
 	int hp;//‘Ì—Í
 	int inv;//–³“GŠÔ
 
-	int boss1flag;
-	int boss2flag;
-	int boss3flag;
 };
 
 bool isHit(En en1, En en2);//“–‚½‚è”»’èŠÖ”

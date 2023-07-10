@@ -13,12 +13,14 @@ void init();//初期化関数のプロトタイプ宣言
 void titleUpdate();
 void update();//更新関数のプロトタイプ宣言
 void draw();//描画処理
+void a();//ステージとステージの間に挟むやつ
 
 enum GameScene
 {
 	Title,
 	Game,
-	Result
+	Result,
+	A
 };
 GameScene scene = Title;
 int TitleLogo;
@@ -47,6 +49,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		if (scene == Game)
 		{
 			update();//更新処理の呼び出し
+		}
+		if (scene == A)
+		{
+			a();
 		}
 		ScreenFlip();		//裏画面と表画面の入替
 		ClearDrawScreen();	//裏画面の描画を全て消去
@@ -103,7 +109,10 @@ void update()
 	updateShot();
 	updateEnemyShot();
 	//敵の更新
-	updatestage1Enemy();
+	if (bossflag1 == false)
+	{
+		updatestage1Enemy();
+	}
 	//エフェクトの更新
 	updateEffect();
 	//背景スプライトの更新
@@ -131,4 +140,9 @@ void draw()
 	drawGame();
 	//UI関連の描画
 	drawUI();
+}
+
+void a()
+{
+
 }
