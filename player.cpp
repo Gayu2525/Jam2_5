@@ -87,5 +87,6 @@ void updatePlayer()
 void drawPlayer()
 {
 	DrawCircle(player.x, player.y, player.r, player.color, false);
+	
 	DrawGraph(player.x - 115, player.y - 60, playerimg, true);
 }

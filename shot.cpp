@@ -8,12 +8,14 @@ En shot[ShotNum];//’e
 void initShot()
 {
 	for (int i = 0; i < ShotNum; i++) {
-		shot[i].r = 5;
+		shot[i].r = 10;
 		shot[i].color = GetColor(255, 255, 0);
 		shot[i].fill = true;
-		shot[i].vx = 1.0;
+		shot[i].vx = 10.0;
 		shot[i].vy = 0.0;
 		shot[i].enable = false;
+
+		shotimg = LoadGraph("—Ž‰Ô¶.png");
 	}
 }
 //’e‚ÌXV
@@ -42,6 +44,7 @@ void drawShot()
 			SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);//•s“§–¾
 			DrawCircle(shot[i].x, shot[i].y, shot[i].r * 0.5, shot[i].color, shot[i].fill);
 
+			DrawGraph(shot[i].x-40, shot[i].y - 35, shotimg, true);
 		}
 	}
 }

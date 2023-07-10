@@ -1,6 +1,7 @@
 #pragma once
 #include <map>
 extern int playerimg;
+extern int shotimg;
 enum EnemyType
 {
 	ENEMY1,//“Gƒ^ƒCƒv‚P

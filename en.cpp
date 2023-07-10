@@ -3,6 +3,7 @@
 #include <math.h>
 
 int playerimg;//ƒvƒŒƒCƒ„[‰æ‘œ
+int shotimg;
 
 //‰~‚Ì“–‚½‚è”»’èŠÖ”
 bool isHit(En en1, En en2)
