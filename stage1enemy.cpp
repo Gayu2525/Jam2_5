@@ -13,7 +13,7 @@ En enemy[EnemyNum];//“G
 
 int explodese;//”š”­SE
 //“G‚Ì‰Šú‰»
-void initEnemy()
+void initstage1Enemy()
 {
 	explodese = LoadSoundMem("maou_se_battle_explosion06.mp3");
 
@@ -203,7 +203,7 @@ void explosion(En ene)
 	}
 }
 //“G‚ÌXV
-void updateEnemy()
+void updatestage1Enemy()
 {
 	for (int i = 0; i < EnemyNum; i++) {
 		if (enemy[i].enable == true) {
@@ -281,7 +281,7 @@ void updateEnemy()
 }
 
 //“G‚Ì•`‰æ
-void drawEnemy()
+void drawstage1Enemy()
 {
 	for (int i = 0; i < EnemyNum; i++) {
 		if (enemy[i].enable == true) {
