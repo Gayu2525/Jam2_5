@@ -1,7 +1,7 @@
 #pragma once
 #include "en.h"
 
-const int ShotNum = 1000;
+const int ShotNum = 1000nnn;
 extern En shot[ShotNum];//óéâ‘ê∂
 extern En leaf1[ShotNum];//Thousant Leaf
 extern En leaf2[ShotNum];
