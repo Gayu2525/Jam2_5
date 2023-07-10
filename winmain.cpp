@@ -2,7 +2,7 @@
 #include "player.h"
 #include "shot.h"
 #include "enemyshot.h"
-#include "enemy.h"
+#include "stage1enemy.h"
 #include "en.h"
 #include "game.h"
 #include "effect.h"
@@ -68,7 +68,7 @@ void init()
 	initShot();
 	initEnemyShot();
 	//敵の初期化処理
-	initEnemy();
+	initstage1Enemy();
 	//エフェクトの初期化
 	initEffect();
 	//背景スプライトの初期化
@@ -103,7 +103,7 @@ void update()
 	updateShot();
 	updateEnemyShot();
 	//敵の更新
-	updateEnemy();
+	updatestage1Enemy();
 	//エフェクトの更新
 	updateEffect();
 	//背景スプライトの更新
@@ -119,7 +119,7 @@ void draw()
 	//背景スプライトの描画
 	drawBg();
 	//敵の描画
-	drawEnemy();
+	drawstage1Enemy();
 	//プレイヤーの描画
 	drawPlayer();
 	//弾の描画

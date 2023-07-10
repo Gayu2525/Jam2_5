@@ -4,7 +4,7 @@
 #include <math.h>
 #include "shot.h"
 #include "enemyshot.h"
-#include "enemy.h"
+#include "stage1enemy.h"
 #include "player.h"
 #include "effect.h"
 #include "game.h"
@@ -16,6 +16,7 @@ int explodese;//”š”­SE
 void initEnemy()
 {
 	explodese = LoadSoundMem("maou_se_battle_explosion06.mp3");
+
 
 	/*
 	//1‘Ì–Ú‚Ì“G

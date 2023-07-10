@@ -3,9 +3,9 @@
 const int EnemyNum = 10;//“G‚Ì”
 extern En enemy[EnemyNum];//“G
 
-void initEnemy();//“G‚Ì‰Šú‰»
-void updateEnemy();//“G‚ÌXV
-void drawEnemy();//“G‚Ì•`‰æ
+void initstage1Enemy();//“G‚Ì‰Šú‰»
+void updatestage1Enemy();//“G‚ÌXV
+void drawstage1Enemy();//“G‚Ì•`‰æ
 
 bool canEnemyShot(En enemy);//’e‚ªŒ‚‚Ä‚é‚©Šm”F
 

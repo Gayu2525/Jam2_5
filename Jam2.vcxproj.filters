@@ -24,7 +24,7 @@
     <ClCompile Include="enemyshot.cpp">
       <Filter>ソースファイル</Filter>
     </ClCompile>
-    <ClCompile Include="enemy.cpp">
+    <ClCompile Include="stage1enemy.cpp">
       <Filter>ソースファイル</Filter>
     </ClCompile>
     <ClCompile Include="en.cpp">
@@ -53,7 +53,7 @@
     <ClInclude Include="enemyshot.h">
       <Filter>ヘッダファイル</Filter>
     </ClInclude>
-    <ClInclude Include="enemy.h">
+    <ClInclude Include="stage1enemy.h">
       <Filter>ヘッダファイル</Filter>
     </ClInclude>
     <ClInclude Include="en.h">
