@@ -79,7 +79,9 @@ void init()
 	initShot();
 	initEnemyShot();
 	//敵の初期化処理
-	initstage1Enemy();
+	if (clearflag1 == false) {
+		initstage1Enemy();
+	}
 	//エフェクトの初期化
 	initEffect();
 	//背景スプライトの初期化
@@ -153,5 +155,10 @@ void a()
 	if (clearflag1 == true)
 	{
 		DrawFormatString(350, 300, GetColor(255, 255, 255), "2面クリア！Enterで3面へ");
+	}
+	if (CheckHitKey(KEY_INPUT_RETURN) == 1)
+	{
+		scene = Game;
+		PlayMusic("maou_game_vehicle03.mp3", DX_PLAYTYPE_LOOP);
 	}
 }
