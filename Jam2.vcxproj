@@ -102,12 +102,11 @@
     <ClInclude Include="bgsprite.h" />
     <ClInclude Include="effect.h" />
     <ClInclude Include="en.h" />
-    <ClInclude Include="stage1enemy.h" />
+    <ClInclude Include="enemy.h" />
     <ClInclude Include="enemyshot.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="shot.h" />
-    <ClInclude Include="stage2enemy.h" />
     <ClInclude Include="UI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

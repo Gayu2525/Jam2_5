@@ -4,7 +4,7 @@
 #include <math.h>
 #include "shot.h"
 #include "enemyshot.h"
-#include "stage1enemy.h"
+#include "enemy.h"
 #include "player.h"
 #include "effect.h"
 #include "game.h"

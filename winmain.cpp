@@ -2,7 +2,7 @@
 #include "player.h"
 #include "shot.h"
 #include "enemyshot.h"
-#include "stage1enemy.h"
+#include "enemy.h"
 #include "en.h"
 #include "game.h"
 #include "effect.h"
@@ -79,9 +79,7 @@ void init()
 	initShot();
 	initEnemyShot();
 	//敵の初期化処理
-	if (clearflag1 == false) {
-		initstage1Enemy();
-	}
+	initstage1Enemy();
 	//エフェクトの初期化
 	initEffect();
 	//背景スプライトの初期化
@@ -116,7 +114,15 @@ void update()
 	updateShot();
 	updateEnemyShot();
 	//敵の更新
-	updatestage1Enemy();
+	if (clearflag1 == false) {
+		updatestage1Enemy();
+	}
+	if (clearflag1 == true&&clearflag2==false) {
+		updatestage1Enemy();
+	}
+	if (clearflag2 == true) {
+		updatestage1Enemy();
+	}
 	//エフェクトの更新
 	updateEffect();
 	//背景スプライトの更新
@@ -148,11 +154,12 @@ void draw()
 
 void a()
 {
-	if (clearflag1 == true)
+	if (clearflag1 == true&&clearflag2==false)
 	{
+		initstage2Enemy();
 		DrawFormatString(350, 300, GetColor(255, 255, 255), "1面クリア！Enterで2面へ");
 	}
-	if (clearflag1 == true)
+	if (clearflag2 == true)
 	{
 		DrawFormatString(350, 300, GetColor(255, 255, 255), "2面クリア！Enterで3面へ");
 	}
