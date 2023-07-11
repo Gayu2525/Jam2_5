@@ -11,14 +11,14 @@
 extern bool gameOverFlag;//ゲームオーバー判定
 En enemy[EnemyNum];//敵
 
-int explodese;//爆発SE
+extern int explodese= LoadSoundMem("maou_se_battle_explosion06.mp3");//爆発SE
 
 extern bool clearflag1 = false;
 
 //敵の初期化
 void initstage1Enemy()
 {
-	explodese = LoadSoundMem("maou_se_battle_explosion06.mp3");
+	//LoadSoundMem("maou_se_battle_explosion06.mp3");
 
 	//ボス（仮）
 	enemy[0].x = 600;

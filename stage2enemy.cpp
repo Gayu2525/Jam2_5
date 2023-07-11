@@ -9,7 +9,7 @@
 #include "effect.h"
 #include "game.h"
 extern bool gameOverFlag;//ゲームオーバー判定
-int explodese;//爆発SE
+
 
 extern bool clearflag2 = false;
 
@@ -17,7 +17,6 @@ extern bool clearflag2 = false;
 void initstage2Enemy()
 {
 
-	explodese = LoadSoundMem("maou_se_battle_explosion06.mp3");
 
 	//ボス（仮）
 	enemy[0].x = 600;
@@ -148,73 +147,10 @@ void initstage2Enemy()
 	*/
 
 }
-//真っすぐ弾を撃つ
-void straightShot(int rad, En ene, int shifty)
-{
-	//弾が無効なときのみ初期値をセットし有効にする
-	for (int j = 0; j < EnemyShotNum; j++)
-	{
-		//撃てる弾をみつける
-		if (enemyshot[j].enable == false) {
-			//弾を撃つ
-			enemyshot[j].x = ene.x;
-			enemyshot[j].y = ene.y + shifty;
-			double PI = 3.14159265358979323846264338;
-			double minrad = PI / 180.0;//1度のラジアン
-			double speed = 3.0;//速度
-			enemyshot[j].vx = speed * cos(minrad * rad);
-			enemyshot[j].vy = speed * sin(minrad * rad);
-			enemyshot[j].enable = true;
-			enemyshot[j].type = ene.type;
-			enemyshot[j].vvx = -enemyshot[j].vx * 0.002;
-			enemyshot[j].vvy = -enemyshot[j].vy * 0.002;
-			break;
-		}
-	}
-}
 
-//狙って撃つ
-void aimShot(En ene)
-{
-	//弾を撃てる状態
-//弾が無効なときのみ初期値をセットし有効にする
-	for (int j = 0; j < EnemyShotNum; j++)
-	{
-		//撃てる弾をみつける
-		if (enemyshot[j].enable == false) {
-			//弾を撃つ
-			enemyshot[j].x = ene.x;
-			enemyshot[j].y = ene.y;
 
-			double speed = 3.0;//速度
-			double dx = player.x - ene.x;//プレイヤーと敵のx方向の距離
-			double dy = player.y - ene.y;//プレイヤーと敵のy方向の距離
-			double d = sqrt(dx * dx + dy * dy);//敵とプレイヤーとの距離
-			enemyshot[j].vx = speed * (dx / d);//xの移動量
-			enemyshot[j].vy = speed * (dy / d);//yの移動量
-			enemyshot[j].enable = true;
-			enemyshot[j].type = ene.type;
-			enemyshot[j].vvx = enemyshot[j].vx * 0.01;
-			enemyshot[j].vvy = enemyshot[j].vy * 0.01;
-			break;
-		}
-	}
-}
-//爆発発生関数
-void explosion(En ene)
-{
-	for (int i = 0; i < EffectNum; i++)
-	{
-		if (effe[i].enable == false)
-		{
-			effe[i].enable = true;
-			effe[i].x = ene.x - 60;
-			effe[i].y = ene.y - 60;
-			effe[i].animeNo = 0;
-			break;
-		}
-	}
-}
+
+
 //敵の更新
 void updatestage2Enemy()
 {
@@ -346,21 +282,4 @@ void drawstage2Enemy()
 			DrawCircle(enemy[i].x, enemy[i].y, enemy[i].r, enemy[i].color, enemy[i].fill);
 		}
 	}
-}
-//弾が撃てるか確認する関数
-bool canEnemyShot(En enemy)
-{
-	//銃が冷えている
-	if (enemy.cooltime <= 0) {
-		if (enemy.x >= 0 &&
-			enemy.x < 800 &&
-			enemy.y>0 &&
-			enemy.y < 600)
-		{
-			//画面の中にいる
-			return true;
-		}
-	}
-
-	return false;
 }
