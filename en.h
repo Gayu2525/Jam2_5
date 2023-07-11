@@ -40,7 +40,7 @@ struct En
 
 	int hp;//‘Ì—Í
 	int inv;//–³“GŠÔ
-	int x;
+	int nage;
 
 };
 

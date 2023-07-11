@@ -23,6 +23,7 @@ void initPlayer()
 
 	player.hp = 10;
 	player.inv = 0;
+	player.nage = 0;
 
 	playerimg = LoadGraph("player_1.png");
 }
@@ -67,7 +68,7 @@ void updatePlayer()
 	//’e‚ğŒ‚‚Âˆ—
 	if (CheckHitKey(KEY_INPUT_N) == 1)
 	{
-		player.x++;
+		player.nage++;
 		//’e‚ª–³Œø‚È‚Æ‚«‚Ì‚İ‰Šú’l‚ğƒZƒbƒg‚µ—LŒø‚É‚·‚é
 		for (int i = 0; i < ShotNum; i++)
 		{
@@ -106,9 +107,19 @@ void updatePlayer()
 		}
 	}
 
-	if (CheckHitKey(KEY_INPUT_N) == 1)
+	if (player.nage%30>10) {
+		playerimg = LoadGraph("player_1.png");
+	}
+	if (player.nage % 30 < 20&&player.nage%30>10) {
+		playerimg = LoadGraph("˜JŠî“Š‚°.png");
+	}
+	if (player.nage % 30 > 20) {
+		playerimg = LoadGraph("˜JŠî\‚¦.png");
+	}
+
+	if (CheckHitKey(KEY_INPUT_N) == 0)
 	{
-		player.x = 0;
+		player.nage = 0;
 	}
 
 	//e‚ğ—â‚â‚·ˆ—
