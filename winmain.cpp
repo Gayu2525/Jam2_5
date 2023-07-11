@@ -53,14 +53,53 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 			if (clearflag1 == true&&aa==0)
 			{
+				//ゲームの初期化
+				initGame();
+				//プレイヤーの初期化
+				initPlayer();
+				//弾の初期化
+				initShot();
+				initEnemyShot();
+				//敵の初期化処理
+				initstage1Enemy();
+				//エフェクトの初期化
+				initEffect();
+				//背景スプライトの初期化
+				initBg();
 				scene = A;
 			}
 			if (clearflag2 == true && aa == 1)
 			{
+				//ゲームの初期化
+				initGame();
+				//プレイヤーの初期化
+				initPlayer();
+				//弾の初期化
+				initShot();
+				initEnemyShot();
+				//敵の初期化処理
+				initstage1Enemy();
+				//エフェクトの初期化
+				initEffect();
+				//背景スプライトの初期化
+				initBg();
 				scene = A;
 			}
 			if (clearflag3 == true && aa == 2)
 			{
+				//ゲームの初期化
+				initGame();
+				//プレイヤーの初期化
+				initPlayer();
+				//弾の初期化
+				initShot();
+				initEnemyShot();
+				//敵の初期化処理
+				initstage1Enemy();
+				//エフェクトの初期化
+				initEffect();
+				//背景スプライトの初期化
+				initBg();
 				scene = A;
 			}
 		}
