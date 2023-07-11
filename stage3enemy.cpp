@@ -9,8 +9,6 @@
 #include "effect.h"
 #include "game.h"
 extern bool gameOverFlag;//ゲームオーバー判定
-En enemy[EnemyNum];//敵
-
 int explodese;//爆発SE
 
 extern bool clearflag3 = false;
@@ -18,6 +16,7 @@ extern bool clearflag3 = false;
 //敵の初期化
 void initstage3Enemy()
 {
+
 	explodese = LoadSoundMem("maou_se_battle_explosion06.mp3");
 
 	//ボス（仮）
