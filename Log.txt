@@ -1,1200 +1,168 @@
 ﻿0:ChangeWindowMode実行 
-1:ウインドウモードフラグが立てられました
-1:ＤＸライブラリの初期化処理開始
+0:ウインドウモードフラグが立てられました
+0:ＤＸライブラリの初期化処理開始
 4:	システムの情報を出力します
 4:		ＤＸライブラリ Ver3.24b
-4:		論理プロセッサの数 : 12
-4:		ＯＳ  Windows11 ( Build 22000  )
+5:		論理プロセッサの数 : 12
+5:		ＯＳ  Windows11 ( Build 22000  )
 6:	ＣＯＭの初期化... 成功
-8:	非同期読み込み処理の初期化...成功
+9:	非同期読み込み処理の初期化...成功
 9:	ファイルアクセス処理の初期化...成功
-9:	メモリ総量:16163.30MB  空きメモリ領域:9208.16MB 
-10:	タイマーの精度を検査します
-10:	精度結果 更新回数 マルチメディアタイマー：0  パフォーマンスカウンター：60
-10:	 パフォーマンスカウンターを使用します タイマー精度 : 10000.000000 KHz 
-11:	 
-11:	ソフトの二重起動検査... 二重起動はされていませんでした
-12:	ウインドウクラスを登録します... 登録に成功しました
-12:	ウインドウモード起動用のウインドウを作成します
-12:	ディスプレイ情報のセットアップ開始
-13:		モニターの数：1  ディスプレイデバイスの数：8
-14:		No.0  モニター名：\\.\DISPLAY1　1920x1080　32bit　144Hz  96x96dpi
-21:	ディスプレイ情報のセットアップ完了
-21:	ウインドウ矩形 ( 544, 189 )-( 1360, 828 )
-25:	ウインドウの作成に成功しました
-25:	ウインドウを表示します
-42:	ＩＭＥを無効にしました
-43:	ウインドウスタイルをウインドウモード用に変更します... 完了
-72:	XInput DLL の読み込み中... 成功
-76:	DirectInput関係初期化処理
-76:		DirectInput8 の取得を試みます...成功
-88:			引き続き初期化処理... 初期化成功
-89:		ジョイパッドの初期化... 
-89:			XInput 対応コントローラーのチェックを開始します
-90:				XInput 対応コントローラー No.0 をチェック
-90:				XInput 対応コントローラー No.0 の接続は確認できませんでした
-90:				XInput 対応コントローラー No.1 をチェック
-90:				XInput 対応コントローラー No.1 の接続は確認できませんでした
-91:				XInput 対応コントローラー No.2 をチェック
-91:				XInput 対応コントローラー No.2 の接続は確認できませんでした
-91:				XInput 対応コントローラー No.3 をチェック
-91:				XInput 対応コントローラー No.3 の接続は確認できませんでした
-92:			XInput 対応コントローラーのチェック完了
-92:			DirectInput 対応ジョイパッドの列挙を開始します
-96:			DirectInput 対応ジョイパッドの列挙終了
-96:		ジョイパッドの初期化は正常に終了しました
-97:		マウスデバイスの初期化... 初期化成功
-98:		キーボードデバイスの初期化... 初期化成功
-100:	DirectInput 関連の初期化は正常に終了しました
-104:	WASAPI の初期化を行います
-110:		デバイス名 : Speakers (3- Realtek(R) Audio)
-126:		デフォルト遅延時間 : 10.000 ms
-126:		最小遅延時間       : 3.000 ms
-127:		遅延時間           : 10.000 ms
-129:		チャンネル数  　   : 2 ch
-130:		量子化ビット深度   : 32 bit
-130:		有効ビット深度　   : 32 bit
-130:		サンプリングレート : 48000 Hz
-130:		データ形式         : 浮動小数点型
-225:		動作モード         : 共有モード
-225:	WASAPI の初期化は正常に終了しました
-229:	d3d11.dll の読み込み.... 成功
-232:	dxgi.dll の読み込み.... 成功
-233:	API CreateDXGIFactory2 のアドレスを取得します.... 成功
-233:	IDXGIFactory2 を作成します.... 成功
-251:	API CreateDXGIFactory6 のアドレスを取得します.... 成功
-251:	IDXGIAdapter を列挙
-252:		Adapter No.0 Desc:NVIDIA GeForce RTX 3050 Laptop GPU  VRAM:3072MB
-252:		Adapter No.1 Desc:Intel(R) UHD Graphics  VRAM:128MB
-252:			Output Device No.0 Name:\\.\DISPLAY1 ( 0, 0 )-( 1920, 1080 )
-252:		Adapter No.2 Desc:Microsoft Basic Render Driver  VRAM:0MB
-253:	API D3D11CreateDevice のアドレスを取得します.... 成功
-254:	IDXGIAdapter を取得します.... 成功
-254:	IDXGIAdapter1 を取得します.... 成功
-255:	IDXGIAdapter2 を取得します.... 成功
-256:	IDXGIAdapter3 を取得します.... 成功
-257:	IDXGIAdapter4 を取得します.... 成功
-257:	Direct3D 11 FeatureLevel 11_0 以上を対象とします
-258:	ID3D11Device オブジェクトを取得します.... 成功
-296:	IDXGIDevice1 を取得します.... 成功
-296:	IDXGIDevice1->SetMaximunFrameLatency( 1 ); を実行しました
-297:	[ウインドウモード 800x600 ( 560, 227 )-( 1360, 827 )]
-297:	IDXGISwapChain2 を作成します.... 成功
-300:	IDXGIFactory2->CreateSwapChainForHwnd の戻り値：0x00000000
-300:	IDXGIOutput を取得します.... 成功
-300:	Graphics Device:Intel(R) UHD Graphics
-301:	画面のフォーマットは DXGI_FORMAT_R8G8B8A8_UNORM です
-301:	16bit Zバッファフォーマットは DXGI_FORMAT_D16_UNORM です
-301:	24bit Zバッファフォーマットは DXGI_FORMAT_D24_UNORM_S8_UINT です
-301:	32bit Zバッファフォーマットは DXGI_FORMAT_D32_FLOAT です
-301:	16bit カラーフォーマットは DXGI_FORMAT_B5G6R5_UNORM です
-302:	32bit カラーフォーマットは DXGI_FORMAT_B8G8R8X8_UNORM です
-302:	アルファ付き 16bit カラーフォーマットは DXGI_FORMAT_B4G4R4A4_UNORM です
-302:	アルファ付き 32bit カラーフォーマットは DXGI_FORMAT_R8G8B8A8_UNORM です
-303:	アルファテスト用 16bit カラーフォーマットは DXGI_FORMAT_B5G5R5A1_UNORM です
-303:	アルファテスト用 32bit カラーフォーマットは DXGI_FORMAT_R8G8B8A8_UNORM です
-303:	ＤＸＴ１テクスチャフォーマットは DXGI_FORMAT_BC1_UNORM です
-303:	ＤＸＴ２テクスチャフォーマットは使えません
-303:	ＤＸＴ３テクスチャフォーマットは DXGI_FORMAT_BC2_UNORM です
-304:	ＤＸＴ４テクスチャフォーマットは使えません
-304:	ＤＸＴ５テクスチャフォーマットは DXGI_FORMAT_BC3_UNORM です
-304:	BC7_UNORM テクスチャフォーマットは DXGI_FORMAT_BC7_UNORM です
-304:	BC7_UNORM_SRGB テクスチャフォーマットは DXGI_FORMAT_BC7_UNORM_SRGB です
-304:	ABGR 整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16B16A16_UNORM です
-304:	ABGR 浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16B16A16_FLOAT です
-304:	ABGR 浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32G32B32A32_FLOAT です
-304:	１チャンネル整数 8 ビット型カラーフォーマットは DXGI_FORMAT_R8_UNORM です
-305:	１チャンネル整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16_UNORM です
-305:	１チャンネル浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16_FLOAT です
-305:	１チャンネル浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32_FLOAT です
-306:	２チャンネル整数 8 ビット型カラーフォーマットは DXGI_FORMAT_R8G8_UNORM です
-306:	２チャンネル整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16_UNORM です
-306:	２チャンネル浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16_FLOAT です
-306:	２チャンネル浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32G32_FLOAT です
-306:	描画用 16bit カラーフォーマットは DXGI_FORMAT_B5G6R5_UNORM です
-307:	描画用 32bit カラーフォーマットは DXGI_FORMAT_B8G8R8X8_UNORM です
-307:	描画用アルファ付き 32bit カラーフォーマットは DXGI_FORMAT_R8G8B8A8_UNORM です
-307:	描画用 ABGR 整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16B16A16_UNORM です
-307:	描画用 ABGR 浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16B16A16_FLOAT です
-307:	描画用 ABGR 浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32G32B32A32_FLOAT です
-307:	描画用１チャンネル整数 8 ビット型カラーフォーマットは DXGI_FORMAT_R8_UNORM です
-308:	描画用１チャンネル整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16_UNORM です
-308:	描画用１チャンネル浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16_FLOAT です
-308:	描画用１チャンネル浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32_FLOAT です
-308:	描画用２チャンネル整数 8 ビット型カラーフォーマットは DXGI_FORMAT_R8G8_UNORM です
-308:	描画用２チャンネル整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16_UNORM です
-308:	描画用２チャンネル浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16_FLOAT です
-309:	描画用２チャンネル浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32G32_FLOAT です
-309:	使用する機能レベル:D3D_FEATURE_LEVEL_11_1
-309:	同時にレンダリングできるバッファの数:8
-309:	最大テクスチャサイズ　幅:16384 高さ:16384
-309:	標準描画用の頂点バッファの作成.... 成功
-310:	シェーダーコード関係の初期化.... 成功
-323:	各種シェーダー用定数バッファの作成.... 成功
-325:	各種 ID3D11InputLayout の作成.... 成功
-349:	画像の単純転送処理の初期化... 成功
-349:	深度バッファを作成します.... 成功
-351:	フォントの初期化を行います
-352:	フォントの初期化は正常に終了しました
-392:	文字コードバッファの初期化を行います... 完了しました
-400:ＤＸライブラリの初期化処理終了
-406:File Open Error : C:\Users\G2333\source\repos\Jam2_5\maou_se_battle16.mp3
-407:Sound File Load Error : C:\Users\G2333\source\repos\Jam2_5\maou_se_battle16.mp3
-474:画像ファイル C:\Users\G2333\source\repos\Jam2_5\effect.png のロードに失敗しました
-475:画像ファイル C:\Users\G2333\source\repos\Jam2_5\BG0.png がありません
-475:画像ファイル C:\Users\G2333\source\repos\Jam2_5\BG1.png がありません
-476:画像ファイル C:\Users\G2333\source\repos\Jam2_5\BG2.png がありません
-478:画像ファイル C:\Users\G2333\source\repos\Jam2_5\pushenter.png がありません
-480:Music File Open Error : maou_game_boss03.mp3
-704:Music File Open Error : maou_game_vehicle03.mp3
-3619:Music File Open Error : maou_game_vehicle03.mp3
-9180:Music File Open Error : maou_game_vehicle03.mp3
-9187:Music File Open Error : maou_game_vehicle03.mp3
-9194:Music File Open Error : maou_game_vehicle03.mp3
-9201:Music File Open Error : maou_game_vehicle03.mp3
-9208:Music File Open Error : maou_game_vehicle03.mp3
-9215:Music File Open Error : maou_game_vehicle03.mp3
-9222:Music File Open Error : maou_game_vehicle03.mp3
-9229:Music File Open Error : maou_game_vehicle03.mp3
-9236:Music File Open Error : maou_game_vehicle03.mp3
-9242:Music File Open Error : maou_game_vehicle03.mp3
-9249:Music File Open Error : maou_game_vehicle03.mp3
-9853:Music File Open Error : maou_game_vehicle03.mp3
-9861:Music File Open Error : maou_game_vehicle03.mp3
-9868:Music File Open Error : maou_game_vehicle03.mp3
-9875:Music File Open Error : maou_game_vehicle03.mp3
-9882:Music File Open Error : maou_game_vehicle03.mp3
-9889:Music File Open Error : maou_game_vehicle03.mp3
-9895:Music File Open Error : maou_game_vehicle03.mp3
-9902:Music File Open Error : maou_game_vehicle03.mp3
-9909:Music File Open Error : maou_game_vehicle03.mp3
-9916:Music File Open Error : maou_game_vehicle03.mp3
-9923:Music File Open Error : maou_game_vehicle03.mp3
-9930:Music File Open Error : maou_game_vehicle03.mp3
-9937:Music File Open Error : maou_game_vehicle03.mp3
-9944:Music File Open Error : maou_game_vehicle03.mp3
-9951:Music File Open Error : maou_game_vehicle03.mp3
-9958:Music File Open Error : maou_game_vehicle03.mp3
-9965:Music File Open Error : maou_game_vehicle03.mp3
-9972:Music File Open Error : maou_game_vehicle03.mp3
-9978:Music File Open Error : maou_game_vehicle03.mp3
-9985:Music File Open Error : maou_game_vehicle03.mp3
-9992:Music File Open Error : maou_game_vehicle03.mp3
-9999:Music File Open Error : maou_game_vehicle03.mp3
-10006:Music File Open Error : maou_game_vehicle03.mp3
-10013:Music File Open Error : maou_game_vehicle03.mp3
-10020:Music File Open Error : maou_game_vehicle03.mp3
-10027:Music File Open Error : maou_game_vehicle03.mp3
-10034:Music File Open Error : maou_game_vehicle03.mp3
-10041:Music File Open Error : maou_game_vehicle03.mp3
-10048:Music File Open Error : maou_game_vehicle03.mp3
-10055:Music File Open Error : maou_game_vehicle03.mp3
-10062:Music File Open Error : maou_game_vehicle03.mp3
-10069:Music File Open Error : maou_game_vehicle03.mp3
-10076:Music File Open Error : maou_game_vehicle03.mp3
-10083:Music File Open Error : maou_game_vehicle03.mp3
-10090:Music File Open Error : maou_game_vehicle03.mp3
-10096:Music File Open Error : maou_game_vehicle03.mp3
-10103:Music File Open Error : maou_game_vehicle03.mp3
-10110:Music File Open Error : maou_game_vehicle03.mp3
-10117:Music File Open Error : maou_game_vehicle03.mp3
-10124:Music File Open Error : maou_game_vehicle03.mp3
-10131:Music File Open Error : maou_game_vehicle03.mp3
-10138:Music File Open Error : maou_game_vehicle03.mp3
-10145:Music File Open Error : maou_game_vehicle03.mp3
-10152:Music File Open Error : maou_game_vehicle03.mp3
-10159:Music File Open Error : maou_game_vehicle03.mp3
-10167:Music File Open Error : maou_game_vehicle03.mp3
-10353:Music File Open Error : maou_game_vehicle03.mp3
-10361:Music File Open Error : maou_game_vehicle03.mp3
-10367:Music File Open Error : maou_game_vehicle03.mp3
-10375:Music File Open Error : maou_game_vehicle03.mp3
-10381:Music File Open Error : maou_game_vehicle03.mp3
-10388:Music File Open Error : maou_game_vehicle03.mp3
-10395:Music File Open Error : maou_game_vehicle03.mp3
-10402:Music File Open Error : maou_game_vehicle03.mp3
-10409:Music File Open Error : maou_game_vehicle03.mp3
-10416:Music File Open Error : maou_game_vehicle03.mp3
-10423:Music File Open Error : maou_game_vehicle03.mp3
-10430:Music File Open Error : maou_game_vehicle03.mp3
-10437:Music File Open Error : maou_game_vehicle03.mp3
-10569:Music File Open Error : maou_game_vehicle03.mp3
-10576:Music File Open Error : maou_game_vehicle03.mp3
-10583:Music File Open Error : maou_game_vehicle03.mp3
-10590:Music File Open Error : maou_game_vehicle03.mp3
-10596:Music File Open Error : maou_game_vehicle03.mp3
-10604:Music File Open Error : maou_game_vehicle03.mp3
-10610:Music File Open Error : maou_game_vehicle03.mp3
-10617:Music File Open Error : maou_game_vehicle03.mp3
-10624:Music File Open Error : maou_game_vehicle03.mp3
-10631:Music File Open Error : maou_game_vehicle03.mp3
-10638:Music File Open Error : maou_game_vehicle03.mp3
-10645:Music File Open Error : maou_game_vehicle03.mp3
-10652:Music File Open Error : maou_game_vehicle03.mp3
-10659:Music File Open Error : maou_game_vehicle03.mp3
-10666:Music File Open Error : maou_game_vehicle03.mp3
-10673:Music File Open Error : maou_game_vehicle03.mp3
-10680:Music File Open Error : maou_game_vehicle03.mp3
-10687:Music File Open Error : maou_game_vehicle03.mp3
-10874:Music File Open Error : maou_game_vehicle03.mp3
-10881:Music File Open Error : maou_game_vehicle03.mp3
-10888:Music File Open Error : maou_game_vehicle03.mp3
-10895:Music File Open Error : maou_game_vehicle03.mp3
-10902:Music File Open Error : maou_game_vehicle03.mp3
-10910:Music File Open Error : maou_game_vehicle03.mp3
-10916:Music File Open Error : maou_game_vehicle03.mp3
-10923:Music File Open Error : maou_game_vehicle03.mp3
-10930:Music File Open Error : maou_game_vehicle03.mp3
-10937:Music File Open Error : maou_game_vehicle03.mp3
-10944:Music File Open Error : maou_game_vehicle03.mp3
-10951:Music File Open Error : maou_game_vehicle03.mp3
-10958:Music File Open Error : maou_game_vehicle03.mp3
-10964:Music File Open Error : maou_game_vehicle03.mp3
-10971:Music File Open Error : maou_game_vehicle03.mp3
-10978:Music File Open Error : maou_game_vehicle03.mp3
-10985:Music File Open Error : maou_game_vehicle03.mp3
-10993:Music File Open Error : maou_game_vehicle03.mp3
-10999:Music File Open Error : maou_game_vehicle03.mp3
-11006:Music File Open Error : maou_game_vehicle03.mp3
-11013:Music File Open Error : maou_game_vehicle03.mp3
-11020:Music File Open Error : maou_game_vehicle03.mp3
-11027:Music File Open Error : maou_game_vehicle03.mp3
-11034:Music File Open Error : maou_game_vehicle03.mp3
-11041:Music File Open Error : maou_game_vehicle03.mp3
-11048:Music File Open Error : maou_game_vehicle03.mp3
-11055:Music File Open Error : maou_game_vehicle03.mp3
-11062:Music File Open Error : maou_game_vehicle03.mp3
-11069:Music File Open Error : maou_game_vehicle03.mp3
-11075:Music File Open Error : maou_game_vehicle03.mp3
-11082:Music File Open Error : maou_game_vehicle03.mp3
-11089:Music File Open Error : maou_game_vehicle03.mp3
-11096:Music File Open Error : maou_game_vehicle03.mp3
-11103:Music File Open Error : maou_game_vehicle03.mp3
-11110:Music File Open Error : maou_game_vehicle03.mp3
-11117:Music File Open Error : maou_game_vehicle03.mp3
-11124:Music File Open Error : maou_game_vehicle03.mp3
-11131:Music File Open Error : maou_game_vehicle03.mp3
-11138:Music File Open Error : maou_game_vehicle03.mp3
-11145:Music File Open Error : maou_game_vehicle03.mp3
-11152:Music File Open Error : maou_game_vehicle03.mp3
-11159:Music File Open Error : maou_game_vehicle03.mp3
-11166:Music File Open Error : maou_game_vehicle03.mp3
-11172:Music File Open Error : maou_game_vehicle03.mp3
-11180:Music File Open Error : maou_game_vehicle03.mp3
-11187:Music File Open Error : maou_game_vehicle03.mp3
-11194:Music File Open Error : maou_game_vehicle03.mp3
-11201:Music File Open Error : maou_game_vehicle03.mp3
-11207:Music File Open Error : maou_game_vehicle03.mp3
-11215:Music File Open Error : maou_game_vehicle03.mp3
-11221:Music File Open Error : maou_game_vehicle03.mp3
-11229:Music File Open Error : maou_game_vehicle03.mp3
-11236:Music File Open Error : maou_game_vehicle03.mp3
-11242:Music File Open Error : maou_game_vehicle03.mp3
-11249:Music File Open Error : maou_game_vehicle03.mp3
-11256:Music File Open Error : maou_game_vehicle03.mp3
-11263:Music File Open Error : maou_game_vehicle03.mp3
-11270:Music File Open Error : maou_game_vehicle03.mp3
-11277:Music File Open Error : maou_game_vehicle03.mp3
-11284:Music File Open Error : maou_game_vehicle03.mp3
-11291:Music File Open Error : maou_game_vehicle03.mp3
-11298:Music File Open Error : maou_game_vehicle03.mp3
-11305:Music File Open Error : maou_game_vehicle03.mp3
-11312:Music File Open Error : maou_game_vehicle03.mp3
-11319:Music File Open Error : maou_game_vehicle03.mp3
-11326:Music File Open Error : maou_game_vehicle03.mp3
-11333:Music File Open Error : maou_game_vehicle03.mp3
-11339:Music File Open Error : maou_game_vehicle03.mp3
-11346:Music File Open Error : maou_game_vehicle03.mp3
-11353:Music File Open Error : maou_game_vehicle03.mp3
-11360:Music File Open Error : maou_game_vehicle03.mp3
-11367:Music File Open Error : maou_game_vehicle03.mp3
-11374:Music File Open Error : maou_game_vehicle03.mp3
-11381:Music File Open Error : maou_game_vehicle03.mp3
-11388:Music File Open Error : maou_game_vehicle03.mp3
-11395:Music File Open Error : maou_game_vehicle03.mp3
-11402:Music File Open Error : maou_game_vehicle03.mp3
-11409:Music File Open Error : maou_game_vehicle03.mp3
-11416:Music File Open Error : maou_game_vehicle03.mp3
-11423:Music File Open Error : maou_game_vehicle03.mp3
-11429:Music File Open Error : maou_game_vehicle03.mp3
-11436:Music File Open Error : maou_game_vehicle03.mp3
-11443:Music File Open Error : maou_game_vehicle03.mp3
-11450:Music File Open Error : maou_game_vehicle03.mp3
-11457:Music File Open Error : maou_game_vehicle03.mp3
-11464:Music File Open Error : maou_game_vehicle03.mp3
-11471:Music File Open Error : maou_game_vehicle03.mp3
-11478:Music File Open Error : maou_game_vehicle03.mp3
-11485:Music File Open Error : maou_game_vehicle03.mp3
-11492:Music File Open Error : maou_game_vehicle03.mp3
-11499:Music File Open Error : maou_game_vehicle03.mp3
-11506:Music File Open Error : maou_game_vehicle03.mp3
-11513:Music File Open Error : maou_game_vehicle03.mp3
-11520:Music File Open Error : maou_game_vehicle03.mp3
-11527:Music File Open Error : maou_game_vehicle03.mp3
-11534:Music File Open Error : maou_game_vehicle03.mp3
-11541:Music File Open Error : maou_game_vehicle03.mp3
-11547:Music File Open Error : maou_game_vehicle03.mp3
-11554:Music File Open Error : maou_game_vehicle03.mp3
-11561:Music File Open Error : maou_game_vehicle03.mp3
-11568:Music File Open Error : maou_game_vehicle03.mp3
-11575:Music File Open Error : maou_game_vehicle03.mp3
-11583:Music File Open Error : maou_game_vehicle03.mp3
-11589:Music File Open Error : maou_game_vehicle03.mp3
-11596:Music File Open Error : maou_game_vehicle03.mp3
-11603:Music File Open Error : maou_game_vehicle03.mp3
-11610:Music File Open Error : maou_game_vehicle03.mp3
-11617:Music File Open Error : maou_game_vehicle03.mp3
-11624:Music File Open Error : maou_game_vehicle03.mp3
-11631:Music File Open Error : maou_game_vehicle03.mp3
-11638:Music File Open Error : maou_game_vehicle03.mp3
-11645:Music File Open Error : maou_game_vehicle03.mp3
-11652:Music File Open Error : maou_game_vehicle03.mp3
-11659:Music File Open Error : maou_game_vehicle03.mp3
-11665:Music File Open Error : maou_game_vehicle03.mp3
-11672:Music File Open Error : maou_game_vehicle03.mp3
-11679:Music File Open Error : maou_game_vehicle03.mp3
-11686:Music File Open Error : maou_game_vehicle03.mp3
-11694:Music File Open Error : maou_game_vehicle03.mp3
-11700:Music File Open Error : maou_game_vehicle03.mp3
-11707:Music File Open Error : maou_game_vehicle03.mp3
-11714:Music File Open Error : maou_game_vehicle03.mp3
-11721:Music File Open Error : maou_game_vehicle03.mp3
-11728:Music File Open Error : maou_game_vehicle03.mp3
-11735:Music File Open Error : maou_game_vehicle03.mp3
-11742:Music File Open Error : maou_game_vehicle03.mp3
-11749:Music File Open Error : maou_game_vehicle03.mp3
-11756:Music File Open Error : maou_game_vehicle03.mp3
-11763:Music File Open Error : maou_game_vehicle03.mp3
-11770:Music File Open Error : maou_game_vehicle03.mp3
-11777:Music File Open Error : maou_game_vehicle03.mp3
-11784:Music File Open Error : maou_game_vehicle03.mp3
-11791:Music File Open Error : maou_game_vehicle03.mp3
-11798:Music File Open Error : maou_game_vehicle03.mp3
-11805:Music File Open Error : maou_game_vehicle03.mp3
-11812:Music File Open Error : maou_game_vehicle03.mp3
-11819:Music File Open Error : maou_game_vehicle03.mp3
-11826:Music File Open Error : maou_game_vehicle03.mp3
-11833:Music File Open Error : maou_game_vehicle03.mp3
-11840:Music File Open Error : maou_game_vehicle03.mp3
-11846:Music File Open Error : maou_game_vehicle03.mp3
-11853:Music File Open Error : maou_game_vehicle03.mp3
-11860:Music File Open Error : maou_game_vehicle03.mp3
-11867:Music File Open Error : maou_game_vehicle03.mp3
-11874:Music File Open Error : maou_game_vehicle03.mp3
-11881:Music File Open Error : maou_game_vehicle03.mp3
-11888:Music File Open Error : maou_game_vehicle03.mp3
-11895:Music File Open Error : maou_game_vehicle03.mp3
-11902:Music File Open Error : maou_game_vehicle03.mp3
-11909:Music File Open Error : maou_game_vehicle03.mp3
-11916:Music File Open Error : maou_game_vehicle03.mp3
-11923:Music File Open Error : maou_game_vehicle03.mp3
-11929:Music File Open Error : maou_game_vehicle03.mp3
-11937:Music File Open Error : maou_game_vehicle03.mp3
-11944:Music File Open Error : maou_game_vehicle03.mp3
-11951:Music File Open Error : maou_game_vehicle03.mp3
-11957:Music File Open Error : maou_game_vehicle03.mp3
-11964:Music File Open Error : maou_game_vehicle03.mp3
-11971:Music File Open Error : maou_game_vehicle03.mp3
-11978:Music File Open Error : maou_game_vehicle03.mp3
-11985:Music File Open Error : maou_game_vehicle03.mp3
-11992:Music File Open Error : maou_game_vehicle03.mp3
-11999:Music File Open Error : maou_game_vehicle03.mp3
-12006:Music File Open Error : maou_game_vehicle03.mp3
-12013:Music File Open Error : maou_game_vehicle03.mp3
-12020:Music File Open Error : maou_game_vehicle03.mp3
-12027:Music File Open Error : maou_game_vehicle03.mp3
-12034:Music File Open Error : maou_game_vehicle03.mp3
-12041:Music File Open Error : maou_game_vehicle03.mp3
-12048:Music File Open Error : maou_game_vehicle03.mp3
-12055:Music File Open Error : maou_game_vehicle03.mp3
-12062:Music File Open Error : maou_game_vehicle03.mp3
-12069:Music File Open Error : maou_game_vehicle03.mp3
-12076:Music File Open Error : maou_game_vehicle03.mp3
-12082:Music File Open Error : maou_game_vehicle03.mp3
-12089:Music File Open Error : maou_game_vehicle03.mp3
-12096:Music File Open Error : maou_game_vehicle03.mp3
-12103:Music File Open Error : maou_game_vehicle03.mp3
-12110:Music File Open Error : maou_game_vehicle03.mp3
-12117:Music File Open Error : maou_game_vehicle03.mp3
-12124:Music File Open Error : maou_game_vehicle03.mp3
-12131:Music File Open Error : maou_game_vehicle03.mp3
-12138:Music File Open Error : maou_game_vehicle03.mp3
-12145:Music File Open Error : maou_game_vehicle03.mp3
-12152:Music File Open Error : maou_game_vehicle03.mp3
-12159:Music File Open Error : maou_game_vehicle03.mp3
-12166:Music File Open Error : maou_game_vehicle03.mp3
-12172:Music File Open Error : maou_game_vehicle03.mp3
-12180:Music File Open Error : maou_game_vehicle03.mp3
-12187:Music File Open Error : maou_game_vehicle03.mp3
-12193:Music File Open Error : maou_game_vehicle03.mp3
-12200:Music File Open Error : maou_game_vehicle03.mp3
-12207:Music File Open Error : maou_game_vehicle03.mp3
-12214:Music File Open Error : maou_game_vehicle03.mp3
-12222:Music File Open Error : maou_game_vehicle03.mp3
-12228:Music File Open Error : maou_game_vehicle03.mp3
-12235:Music File Open Error : maou_game_vehicle03.mp3
-12242:Music File Open Error : maou_game_vehicle03.mp3
-12249:Music File Open Error : maou_game_vehicle03.mp3
-12256:Music File Open Error : maou_game_vehicle03.mp3
-12263:Music File Open Error : maou_game_vehicle03.mp3
-12270:Music File Open Error : maou_game_vehicle03.mp3
-12277:Music File Open Error : maou_game_vehicle03.mp3
-12284:Music File Open Error : maou_game_vehicle03.mp3
-12291:Music File Open Error : maou_game_vehicle03.mp3
-12298:Music File Open Error : maou_game_vehicle03.mp3
-12305:Music File Open Error : maou_game_vehicle03.mp3
-12311:Music File Open Error : maou_game_vehicle03.mp3
-12318:Music File Open Error : maou_game_vehicle03.mp3
-12325:Music File Open Error : maou_game_vehicle03.mp3
-12332:Music File Open Error : maou_game_vehicle03.mp3
-12339:Music File Open Error : maou_game_vehicle03.mp3
-12346:Music File Open Error : maou_game_vehicle03.mp3
-12354:Music File Open Error : maou_game_vehicle03.mp3
-12360:Music File Open Error : maou_game_vehicle03.mp3
-12367:Music File Open Error : maou_game_vehicle03.mp3
-12374:Music File Open Error : maou_game_vehicle03.mp3
-12381:Music File Open Error : maou_game_vehicle03.mp3
-12388:Music File Open Error : maou_game_vehicle03.mp3
-12395:Music File Open Error : maou_game_vehicle03.mp3
-12402:Music File Open Error : maou_game_vehicle03.mp3
-12409:Music File Open Error : maou_game_vehicle03.mp3
-12416:Music File Open Error : maou_game_vehicle03.mp3
-12423:Music File Open Error : maou_game_vehicle03.mp3
-12430:Music File Open Error : maou_game_vehicle03.mp3
-12436:Music File Open Error : maou_game_vehicle03.mp3
-12443:Music File Open Error : maou_game_vehicle03.mp3
-12450:Music File Open Error : maou_game_vehicle03.mp3
-12457:Music File Open Error : maou_game_vehicle03.mp3
-12464:Music File Open Error : maou_game_vehicle03.mp3
-12471:Music File Open Error : maou_game_vehicle03.mp3
-12478:Music File Open Error : maou_game_vehicle03.mp3
-12485:Music File Open Error : maou_game_vehicle03.mp3
-12492:Music File Open Error : maou_game_vehicle03.mp3
-12499:Music File Open Error : maou_game_vehicle03.mp3
-12506:Music File Open Error : maou_game_vehicle03.mp3
-12513:Music File Open Error : maou_game_vehicle03.mp3
-12520:Music File Open Error : maou_game_vehicle03.mp3
-12527:Music File Open Error : maou_game_vehicle03.mp3
-12534:Music File Open Error : maou_game_vehicle03.mp3
-12541:Music File Open Error : maou_game_vehicle03.mp3
-12548:Music File Open Error : maou_game_vehicle03.mp3
-12555:Music File Open Error : maou_game_vehicle03.mp3
-12561:Music File Open Error : maou_game_vehicle03.mp3
-12568:Music File Open Error : maou_game_vehicle03.mp3
-12575:Music File Open Error : maou_game_vehicle03.mp3
-12582:Music File Open Error : maou_game_vehicle03.mp3
-12589:Music File Open Error : maou_game_vehicle03.mp3
-12596:Music File Open Error : maou_game_vehicle03.mp3
-12603:Music File Open Error : maou_game_vehicle03.mp3
-12610:Music File Open Error : maou_game_vehicle03.mp3
-12617:Music File Open Error : maou_game_vehicle03.mp3
-12624:Music File Open Error : maou_game_vehicle03.mp3
-12631:Music File Open Error : maou_game_vehicle03.mp3
-12638:Music File Open Error : maou_game_vehicle03.mp3
-12645:Music File Open Error : maou_game_vehicle03.mp3
-12652:Music File Open Error : maou_game_vehicle03.mp3
-12659:Music File Open Error : maou_game_vehicle03.mp3
-12666:Music File Open Error : maou_game_vehicle03.mp3
-12672:Music File Open Error : maou_game_vehicle03.mp3
-12679:Music File Open Error : maou_game_vehicle03.mp3
-12686:Music File Open Error : maou_game_vehicle03.mp3
-12693:Music File Open Error : maou_game_vehicle03.mp3
-12700:Music File Open Error : maou_game_vehicle03.mp3
-12707:Music File Open Error : maou_game_vehicle03.mp3
-12714:Music File Open Error : maou_game_vehicle03.mp3
-12722:Music File Open Error : maou_game_vehicle03.mp3
-12729:Music File Open Error : maou_game_vehicle03.mp3
-12735:Music File Open Error : maou_game_vehicle03.mp3
-12742:Music File Open Error : maou_game_vehicle03.mp3
-12749:Music File Open Error : maou_game_vehicle03.mp3
-12756:Music File Open Error : maou_game_vehicle03.mp3
-12763:Music File Open Error : maou_game_vehicle03.mp3
-12770:Music File Open Error : maou_game_vehicle03.mp3
-12777:Music File Open Error : maou_game_vehicle03.mp3
-12784:Music File Open Error : maou_game_vehicle03.mp3
-12791:Music File Open Error : maou_game_vehicle03.mp3
-12797:Music File Open Error : maou_game_vehicle03.mp3
-12804:Music File Open Error : maou_game_vehicle03.mp3
-12811:Music File Open Error : maou_game_vehicle03.mp3
-12818:Music File Open Error : maou_game_vehicle03.mp3
-12825:Music File Open Error : maou_game_vehicle03.mp3
-12832:Music File Open Error : maou_game_vehicle03.mp3
-12839:Music File Open Error : maou_game_vehicle03.mp3
-12846:Music File Open Error : maou_game_vehicle03.mp3
-12853:Music File Open Error : maou_game_vehicle03.mp3
-12860:Music File Open Error : maou_game_vehicle03.mp3
-12867:Music File Open Error : maou_game_vehicle03.mp3
-12874:Music File Open Error : maou_game_vehicle03.mp3
-12881:Music File Open Error : maou_game_vehicle03.mp3
-12888:Music File Open Error : maou_game_vehicle03.mp3
-12894:Music File Open Error : maou_game_vehicle03.mp3
-12902:Music File Open Error : maou_game_vehicle03.mp3
-12908:Music File Open Error : maou_game_vehicle03.mp3
-12916:Music File Open Error : maou_game_vehicle03.mp3
-12923:Music File Open Error : maou_game_vehicle03.mp3
-12930:Music File Open Error : maou_game_vehicle03.mp3
-12936:Music File Open Error : maou_game_vehicle03.mp3
-12943:Music File Open Error : maou_game_vehicle03.mp3
-12950:Music File Open Error : maou_game_vehicle03.mp3
-12957:Music File Open Error : maou_game_vehicle03.mp3
-12964:Music File Open Error : maou_game_vehicle03.mp3
-12971:Music File Open Error : maou_game_vehicle03.mp3
-12978:Music File Open Error : maou_game_vehicle03.mp3
-12985:Music File Open Error : maou_game_vehicle03.mp3
-12992:Music File Open Error : maou_game_vehicle03.mp3
-12999:Music File Open Error : maou_game_vehicle03.mp3
-13006:Music File Open Error : maou_game_vehicle03.mp3
-13013:Music File Open Error : maou_game_vehicle03.mp3
-13020:Music File Open Error : maou_game_vehicle03.mp3
-13027:Music File Open Error : maou_game_vehicle03.mp3
-13034:Music File Open Error : maou_game_vehicle03.mp3
-13040:Music File Open Error : maou_game_vehicle03.mp3
-13047:Music File Open Error : maou_game_vehicle03.mp3
-13054:Music File Open Error : maou_game_vehicle03.mp3
-13061:Music File Open Error : maou_game_vehicle03.mp3
-13068:Music File Open Error : maou_game_vehicle03.mp3
-13075:Music File Open Error : maou_game_vehicle03.mp3
-13082:Music File Open Error : maou_game_vehicle03.mp3
-13089:Music File Open Error : maou_game_vehicle03.mp3
-13096:Music File Open Error : maou_game_vehicle03.mp3
-13103:Music File Open Error : maou_game_vehicle03.mp3
-13110:Music File Open Error : maou_game_vehicle03.mp3
-13117:Music File Open Error : maou_game_vehicle03.mp3
-13124:Music File Open Error : maou_game_vehicle03.mp3
-13131:Music File Open Error : maou_game_vehicle03.mp3
-13138:Music File Open Error : maou_game_vehicle03.mp3
-13145:Music File Open Error : maou_game_vehicle03.mp3
-13152:Music File Open Error : maou_game_vehicle03.mp3
-13158:Music File Open Error : maou_game_vehicle03.mp3
-13165:Music File Open Error : maou_game_vehicle03.mp3
-13172:Music File Open Error : maou_game_vehicle03.mp3
-13179:Music File Open Error : maou_game_vehicle03.mp3
-13186:Music File Open Error : maou_game_vehicle03.mp3
-13193:Music File Open Error : maou_game_vehicle03.mp3
-13200:Music File Open Error : maou_game_vehicle03.mp3
-13207:Music File Open Error : maou_game_vehicle03.mp3
-13214:Music File Open Error : maou_game_vehicle03.mp3
-13221:Music File Open Error : maou_game_vehicle03.mp3
-13228:Music File Open Error : maou_game_vehicle03.mp3
-13235:Music File Open Error : maou_game_vehicle03.mp3
-13242:Music File Open Error : maou_game_vehicle03.mp3
-13249:Music File Open Error : maou_game_vehicle03.mp3
-13256:Music File Open Error : maou_game_vehicle03.mp3
-13263:Music File Open Error : maou_game_vehicle03.mp3
-13270:Music File Open Error : maou_game_vehicle03.mp3
-13276:Music File Open Error : maou_game_vehicle03.mp3
-13283:Music File Open Error : maou_game_vehicle03.mp3
-13290:Music File Open Error : maou_game_vehicle03.mp3
-13297:Music File Open Error : maou_game_vehicle03.mp3
-13304:Music File Open Error : maou_game_vehicle03.mp3
-13312:Music File Open Error : maou_game_vehicle03.mp3
-13318:Music File Open Error : maou_game_vehicle03.mp3
-13325:Music File Open Error : maou_game_vehicle03.mp3
-13332:Music File Open Error : maou_game_vehicle03.mp3
-13339:Music File Open Error : maou_game_vehicle03.mp3
-13346:Music File Open Error : maou_game_vehicle03.mp3
-13353:Music File Open Error : maou_game_vehicle03.mp3
-13360:Music File Open Error : maou_game_vehicle03.mp3
-13367:Music File Open Error : maou_game_vehicle03.mp3
-13374:Music File Open Error : maou_game_vehicle03.mp3
-13381:Music File Open Error : maou_game_vehicle03.mp3
-13388:Music File Open Error : maou_game_vehicle03.mp3
-13394:Music File Open Error : maou_game_vehicle03.mp3
-13401:Music File Open Error : maou_game_vehicle03.mp3
-13408:Music File Open Error : maou_game_vehicle03.mp3
-13415:Music File Open Error : maou_game_vehicle03.mp3
-13422:Music File Open Error : maou_game_vehicle03.mp3
-13429:Music File Open Error : maou_game_vehicle03.mp3
-13436:Music File Open Error : maou_game_vehicle03.mp3
-13443:Music File Open Error : maou_game_vehicle03.mp3
-13450:Music File Open Error : maou_game_vehicle03.mp3
-13457:Music File Open Error : maou_game_vehicle03.mp3
-13464:Music File Open Error : maou_game_vehicle03.mp3
-13471:Music File Open Error : maou_game_vehicle03.mp3
-13478:Music File Open Error : maou_game_vehicle03.mp3
-13485:Music File Open Error : maou_game_vehicle03.mp3
-13492:Music File Open Error : maou_game_vehicle03.mp3
-13499:Music File Open Error : maou_game_vehicle03.mp3
-13506:Music File Open Error : maou_game_vehicle03.mp3
-13513:Music File Open Error : maou_game_vehicle03.mp3
-13519:Music File Open Error : maou_game_vehicle03.mp3
-13526:Music File Open Error : maou_game_vehicle03.mp3
-13533:Music File Open Error : maou_game_vehicle03.mp3
-13541:Music File Open Error : maou_game_vehicle03.mp3
-13547:Music File Open Error : maou_game_vehicle03.mp3
-13554:Music File Open Error : maou_game_vehicle03.mp3
-13561:Music File Open Error : maou_game_vehicle03.mp3
-13568:Music File Open Error : maou_game_vehicle03.mp3
-13575:Music File Open Error : maou_game_vehicle03.mp3
-13582:Music File Open Error : maou_game_vehicle03.mp3
-13589:Music File Open Error : maou_game_vehicle03.mp3
-13596:Music File Open Error : maou_game_vehicle03.mp3
-13603:Music File Open Error : maou_game_vehicle03.mp3
-13610:Music File Open Error : maou_game_vehicle03.mp3
-13617:Music File Open Error : maou_game_vehicle03.mp3
-13624:Music File Open Error : maou_game_vehicle03.mp3
-13631:Music File Open Error : maou_game_vehicle03.mp3
-13637:Music File Open Error : maou_game_vehicle03.mp3
-13644:Music File Open Error : maou_game_vehicle03.mp3
-13652:Music File Open Error : maou_game_vehicle03.mp3
-13658:Music File Open Error : maou_game_vehicle03.mp3
-13665:Music File Open Error : maou_game_vehicle03.mp3
-13672:Music File Open Error : maou_game_vehicle03.mp3
-13679:Music File Open Error : maou_game_vehicle03.mp3
-13686:Music File Open Error : maou_game_vehicle03.mp3
-13693:Music File Open Error : maou_game_vehicle03.mp3
-13700:Music File Open Error : maou_game_vehicle03.mp3
-13707:Music File Open Error : maou_game_vehicle03.mp3
-13714:Music File Open Error : maou_game_vehicle03.mp3
-13721:Music File Open Error : maou_game_vehicle03.mp3
-13728:Music File Open Error : maou_game_vehicle03.mp3
-13735:Music File Open Error : maou_game_vehicle03.mp3
-13742:Music File Open Error : maou_game_vehicle03.mp3
-13749:Music File Open Error : maou_game_vehicle03.mp3
-13756:Music File Open Error : maou_game_vehicle03.mp3
-13763:Music File Open Error : maou_game_vehicle03.mp3
-13770:Music File Open Error : maou_game_vehicle03.mp3
-13777:Music File Open Error : maou_game_vehicle03.mp3
-13783:Music File Open Error : maou_game_vehicle03.mp3
-13790:Music File Open Error : maou_game_vehicle03.mp3
-13797:Music File Open Error : maou_game_vehicle03.mp3
-13804:Music File Open Error : maou_game_vehicle03.mp3
-13811:Music File Open Error : maou_game_vehicle03.mp3
-13818:Music File Open Error : maou_game_vehicle03.mp3
-13825:Music File Open Error : maou_game_vehicle03.mp3
-13832:Music File Open Error : maou_game_vehicle03.mp3
-13839:Music File Open Error : maou_game_vehicle03.mp3
-13846:Music File Open Error : maou_game_vehicle03.mp3
-13853:Music File Open Error : maou_game_vehicle03.mp3
-13860:Music File Open Error : maou_game_vehicle03.mp3
-13867:Music File Open Error : maou_game_vehicle03.mp3
-13874:Music File Open Error : maou_game_vehicle03.mp3
-13881:Music File Open Error : maou_game_vehicle03.mp3
-13888:Music File Open Error : maou_game_vehicle03.mp3
-13895:Music File Open Error : maou_game_vehicle03.mp3
-13901:Music File Open Error : maou_game_vehicle03.mp3
-13908:Music File Open Error : maou_game_vehicle03.mp3
-13915:Music File Open Error : maou_game_vehicle03.mp3
-13922:Music File Open Error : maou_game_vehicle03.mp3
-13929:Music File Open Error : maou_game_vehicle03.mp3
-13936:Music File Open Error : maou_game_vehicle03.mp3
-13943:Music File Open Error : maou_game_vehicle03.mp3
-13950:Music File Open Error : maou_game_vehicle03.mp3
-13957:Music File Open Error : maou_game_vehicle03.mp3
-13964:Music File Open Error : maou_game_vehicle03.mp3
-13971:Music File Open Error : maou_game_vehicle03.mp3
-13978:Music File Open Error : maou_game_vehicle03.mp3
-13985:Music File Open Error : maou_game_vehicle03.mp3
-13992:Music File Open Error : maou_game_vehicle03.mp3
-13999:Music File Open Error : maou_game_vehicle03.mp3
-14006:Music File Open Error : maou_game_vehicle03.mp3
-14013:Music File Open Error : maou_game_vehicle03.mp3
-14020:Music File Open Error : maou_game_vehicle03.mp3
-14027:Music File Open Error : maou_game_vehicle03.mp3
-14034:Music File Open Error : maou_game_vehicle03.mp3
-14041:Music File Open Error : maou_game_vehicle03.mp3
-14048:Music File Open Error : maou_game_vehicle03.mp3
-14055:Music File Open Error : maou_game_vehicle03.mp3
-14061:Music File Open Error : maou_game_vehicle03.mp3
-14068:Music File Open Error : maou_game_vehicle03.mp3
-14075:Music File Open Error : maou_game_vehicle03.mp3
-14082:Music File Open Error : maou_game_vehicle03.mp3
-14089:Music File Open Error : maou_game_vehicle03.mp3
-14096:Music File Open Error : maou_game_vehicle03.mp3
-14103:Music File Open Error : maou_game_vehicle03.mp3
-14110:Music File Open Error : maou_game_vehicle03.mp3
-14117:Music File Open Error : maou_game_vehicle03.mp3
-14124:Music File Open Error : maou_game_vehicle03.mp3
-14130:Music File Open Error : maou_game_vehicle03.mp3
-14138:Music File Open Error : maou_game_vehicle03.mp3
-14144:Music File Open Error : maou_game_vehicle03.mp3
-14151:Music File Open Error : maou_game_vehicle03.mp3
-14158:Music File Open Error : maou_game_vehicle03.mp3
-14165:Music File Open Error : maou_game_vehicle03.mp3
-14172:Music File Open Error : maou_game_vehicle03.mp3
-14179:Music File Open Error : maou_game_vehicle03.mp3
-14186:Music File Open Error : maou_game_vehicle03.mp3
-14193:Music File Open Error : maou_game_vehicle03.mp3
-14200:Music File Open Error : maou_game_vehicle03.mp3
-14207:Music File Open Error : maou_game_vehicle03.mp3
-14214:Music File Open Error : maou_game_vehicle03.mp3
-14221:Music File Open Error : maou_game_vehicle03.mp3
-14228:Music File Open Error : maou_game_vehicle03.mp3
-14235:Music File Open Error : maou_game_vehicle03.mp3
-14242:Music File Open Error : maou_game_vehicle03.mp3
-14249:Music File Open Error : maou_game_vehicle03.mp3
-14256:Music File Open Error : maou_game_vehicle03.mp3
-14263:Music File Open Error : maou_game_vehicle03.mp3
-14269:Music File Open Error : maou_game_vehicle03.mp3
-14276:Music File Open Error : maou_game_vehicle03.mp3
-14283:Music File Open Error : maou_game_vehicle03.mp3
-14290:Music File Open Error : maou_game_vehicle03.mp3
-14297:Music File Open Error : maou_game_vehicle03.mp3
-14304:Music File Open Error : maou_game_vehicle03.mp3
-14311:Music File Open Error : maou_game_vehicle03.mp3
-14318:Music File Open Error : maou_game_vehicle03.mp3
-14325:Music File Open Error : maou_game_vehicle03.mp3
-14332:Music File Open Error : maou_game_vehicle03.mp3
-14339:Music File Open Error : maou_game_vehicle03.mp3
-14346:Music File Open Error : maou_game_vehicle03.mp3
-14353:Music File Open Error : maou_game_vehicle03.mp3
-14360:Music File Open Error : maou_game_vehicle03.mp3
-14366:Music File Open Error : maou_game_vehicle03.mp3
-14374:Music File Open Error : maou_game_vehicle03.mp3
-14381:Music File Open Error : maou_game_vehicle03.mp3
-14387:Music File Open Error : maou_game_vehicle03.mp3
-14394:Music File Open Error : maou_game_vehicle03.mp3
-14401:Music File Open Error : maou_game_vehicle03.mp3
-14408:Music File Open Error : maou_game_vehicle03.mp3
-14415:Music File Open Error : maou_game_vehicle03.mp3
-14423:Music File Open Error : maou_game_vehicle03.mp3
-14429:Music File Open Error : maou_game_vehicle03.mp3
-14436:Music File Open Error : maou_game_vehicle03.mp3
-14443:Music File Open Error : maou_game_vehicle03.mp3
-14450:Music File Open Error : maou_game_vehicle03.mp3
-14457:Music File Open Error : maou_game_vehicle03.mp3
-14464:Music File Open Error : maou_game_vehicle03.mp3
-14471:Music File Open Error : maou_game_vehicle03.mp3
-14477:Music File Open Error : maou_game_vehicle03.mp3
-14485:Music File Open Error : maou_game_vehicle03.mp3
-14492:Music File Open Error : maou_game_vehicle03.mp3
-14499:Music File Open Error : maou_game_vehicle03.mp3
-14506:Music File Open Error : maou_game_vehicle03.mp3
-14513:Music File Open Error : maou_game_vehicle03.mp3
-14520:Music File Open Error : maou_game_vehicle03.mp3
-14526:Music File Open Error : maou_game_vehicle03.mp3
-14533:Music File Open Error : maou_game_vehicle03.mp3
-14540:Music File Open Error : maou_game_vehicle03.mp3
-14547:Music File Open Error : maou_game_vehicle03.mp3
-14554:Music File Open Error : maou_game_vehicle03.mp3
-14561:Music File Open Error : maou_game_vehicle03.mp3
-14568:Music File Open Error : maou_game_vehicle03.mp3
-14575:Music File Open Error : maou_game_vehicle03.mp3
-14582:Music File Open Error : maou_game_vehicle03.mp3
-14589:Music File Open Error : maou_game_vehicle03.mp3
-14596:Music File Open Error : maou_game_vehicle03.mp3
-14602:Music File Open Error : maou_game_vehicle03.mp3
-14609:Music File Open Error : maou_game_vehicle03.mp3
-14616:Music File Open Error : maou_game_vehicle03.mp3
-14623:Music File Open Error : maou_game_vehicle03.mp3
-14630:Music File Open Error : maou_game_vehicle03.mp3
-14637:Music File Open Error : maou_game_vehicle03.mp3
-14644:Music File Open Error : maou_game_vehicle03.mp3
-14651:Music File Open Error : maou_game_vehicle03.mp3
-14658:Music File Open Error : maou_game_vehicle03.mp3
-14665:Music File Open Error : maou_game_vehicle03.mp3
-14672:Music File Open Error : maou_game_vehicle03.mp3
-14679:Music File Open Error : maou_game_vehicle03.mp3
-14686:Music File Open Error : maou_game_vehicle03.mp3
-14693:Music File Open Error : maou_game_vehicle03.mp3
-14700:Music File Open Error : maou_game_vehicle03.mp3
-14707:Music File Open Error : maou_game_vehicle03.mp3
-14714:Music File Open Error : maou_game_vehicle03.mp3
-14721:Music File Open Error : maou_game_vehicle03.mp3
-14727:Music File Open Error : maou_game_vehicle03.mp3
-14735:Music File Open Error : maou_game_vehicle03.mp3
-14741:Music File Open Error : maou_game_vehicle03.mp3
-14748:Music File Open Error : maou_game_vehicle03.mp3
-14755:Music File Open Error : maou_game_vehicle03.mp3
-14762:Music File Open Error : maou_game_vehicle03.mp3
-14769:Music File Open Error : maou_game_vehicle03.mp3
-14776:Music File Open Error : maou_game_vehicle03.mp3
-14783:Music File Open Error : maou_game_vehicle03.mp3
-14790:Music File Open Error : maou_game_vehicle03.mp3
-14797:Music File Open Error : maou_game_vehicle03.mp3
-14804:Music File Open Error : maou_game_vehicle03.mp3
-14811:Music File Open Error : maou_game_vehicle03.mp3
-14818:Music File Open Error : maou_game_vehicle03.mp3
-14825:Music File Open Error : maou_game_vehicle03.mp3
-14832:Music File Open Error : maou_game_vehicle03.mp3
-14839:Music File Open Error : maou_game_vehicle03.mp3
-14846:Music File Open Error : maou_game_vehicle03.mp3
-14852:Music File Open Error : maou_game_vehicle03.mp3
-14859:Music File Open Error : maou_game_vehicle03.mp3
-14866:Music File Open Error : maou_game_vehicle03.mp3
-14874:Music File Open Error : maou_game_vehicle03.mp3
-14881:Music File Open Error : maou_game_vehicle03.mp3
-14887:Music File Open Error : maou_game_vehicle03.mp3
-14894:Music File Open Error : maou_game_vehicle03.mp3
-14901:Music File Open Error : maou_game_vehicle03.mp3
-14908:Music File Open Error : maou_game_vehicle03.mp3
-14915:Music File Open Error : maou_game_vehicle03.mp3
-14922:Music File Open Error : maou_game_vehicle03.mp3
-14929:Music File Open Error : maou_game_vehicle03.mp3
-14936:Music File Open Error : maou_game_vehicle03.mp3
-14943:Music File Open Error : maou_game_vehicle03.mp3
-14950:Music File Open Error : maou_game_vehicle03.mp3
-14957:Music File Open Error : maou_game_vehicle03.mp3
-14964:Music File Open Error : maou_game_vehicle03.mp3
-14971:Music File Open Error : maou_game_vehicle03.mp3
-14978:Music File Open Error : maou_game_vehicle03.mp3
-14985:Music File Open Error : maou_game_vehicle03.mp3
-14992:Music File Open Error : maou_game_vehicle03.mp3
-14998:Music File Open Error : maou_game_vehicle03.mp3
-15005:Music File Open Error : maou_game_vehicle03.mp3
-15012:Music File Open Error : maou_game_vehicle03.mp3
-15019:Music File Open Error : maou_game_vehicle03.mp3
-15026:Music File Open Error : maou_game_vehicle03.mp3
-15033:Music File Open Error : maou_game_vehicle03.mp3
-15040:Music File Open Error : maou_game_vehicle03.mp3
-15047:Music File Open Error : maou_game_vehicle03.mp3
-15054:Music File Open Error : maou_game_vehicle03.mp3
-15061:Music File Open Error : maou_game_vehicle03.mp3
-15068:Music File Open Error : maou_game_vehicle03.mp3
-15075:Music File Open Error : maou_game_vehicle03.mp3
-15081:Music File Open Error : maou_game_vehicle03.mp3
-15089:Music File Open Error : maou_game_vehicle03.mp3
-15096:Music File Open Error : maou_game_vehicle03.mp3
-15103:Music File Open Error : maou_game_vehicle03.mp3
-15110:Music File Open Error : maou_game_vehicle03.mp3
-15117:Music File Open Error : maou_game_vehicle03.mp3
-15123:Music File Open Error : maou_game_vehicle03.mp3
-15130:Music File Open Error : maou_game_vehicle03.mp3
-15137:Music File Open Error : maou_game_vehicle03.mp3
-15144:Music File Open Error : maou_game_vehicle03.mp3
-15151:Music File Open Error : maou_game_vehicle03.mp3
-15159:Music File Open Error : maou_game_vehicle03.mp3
-15165:Music File Open Error : maou_game_vehicle03.mp3
-15172:Music File Open Error : maou_game_vehicle03.mp3
-15179:Music File Open Error : maou_game_vehicle03.mp3
-15186:Music File Open Error : maou_game_vehicle03.mp3
-15193:Music File Open Error : maou_game_vehicle03.mp3
-15200:Music File Open Error : maou_game_vehicle03.mp3
-15207:Music File Open Error : maou_game_vehicle03.mp3
-15213:Music File Open Error : maou_game_vehicle03.mp3
-15220:Music File Open Error : maou_game_vehicle03.mp3
-15227:Music File Open Error : maou_game_vehicle03.mp3
-15234:Music File Open Error : maou_game_vehicle03.mp3
-15241:Music File Open Error : maou_game_vehicle03.mp3
-15248:Music File Open Error : maou_game_vehicle03.mp3
-15255:Music File Open Error : maou_game_vehicle03.mp3
-15262:Music File Open Error : maou_game_vehicle03.mp3
-15269:Music File Open Error : maou_game_vehicle03.mp3
-15276:Music File Open Error : maou_game_vehicle03.mp3
-15283:Music File Open Error : maou_game_vehicle03.mp3
-15290:Music File Open Error : maou_game_vehicle03.mp3
-15297:Music File Open Error : maou_game_vehicle03.mp3
-15304:Music File Open Error : maou_game_vehicle03.mp3
-15311:Music File Open Error : maou_game_vehicle03.mp3
-15318:Music File Open Error : maou_game_vehicle03.mp3
-15324:Music File Open Error : maou_game_vehicle03.mp3
-15331:Music File Open Error : maou_game_vehicle03.mp3
-15339:Music File Open Error : maou_game_vehicle03.mp3
-15345:Music File Open Error : maou_game_vehicle03.mp3
-15352:Music File Open Error : maou_game_vehicle03.mp3
-15359:Music File Open Error : maou_game_vehicle03.mp3
-15366:Music File Open Error : maou_game_vehicle03.mp3
-15373:Music File Open Error : maou_game_vehicle03.mp3
-15380:Music File Open Error : maou_game_vehicle03.mp3
-15387:Music File Open Error : maou_game_vehicle03.mp3
-15394:Music File Open Error : maou_game_vehicle03.mp3
-15401:Music File Open Error : maou_game_vehicle03.mp3
-15408:Music File Open Error : maou_game_vehicle03.mp3
-15415:Music File Open Error : maou_game_vehicle03.mp3
-15422:Music File Open Error : maou_game_vehicle03.mp3
-15430:Music File Open Error : maou_game_vehicle03.mp3
-15436:Music File Open Error : maou_game_vehicle03.mp3
-15443:Music File Open Error : maou_game_vehicle03.mp3
-15450:Music File Open Error : maou_game_vehicle03.mp3
-15457:Music File Open Error : maou_game_vehicle03.mp3
-15464:Music File Open Error : maou_game_vehicle03.mp3
-15471:Music File Open Error : maou_game_vehicle03.mp3
-15478:Music File Open Error : maou_game_vehicle03.mp3
-15484:Music File Open Error : maou_game_vehicle03.mp3
-15491:Music File Open Error : maou_game_vehicle03.mp3
-15498:Music File Open Error : maou_game_vehicle03.mp3
-15505:Music File Open Error : maou_game_vehicle03.mp3
-15512:Music File Open Error : maou_game_vehicle03.mp3
-15519:Music File Open Error : maou_game_vehicle03.mp3
-15526:Music File Open Error : maou_game_vehicle03.mp3
-15533:Music File Open Error : maou_game_vehicle03.mp3
-15540:Music File Open Error : maou_game_vehicle03.mp3
-15547:Music File Open Error : maou_game_vehicle03.mp3
-15554:Music File Open Error : maou_game_vehicle03.mp3
-15561:Music File Open Error : maou_game_vehicle03.mp3
-15568:Music File Open Error : maou_game_vehicle03.mp3
-15575:Music File Open Error : maou_game_vehicle03.mp3
-15582:Music File Open Error : maou_game_vehicle03.mp3
-15589:Music File Open Error : maou_game_vehicle03.mp3
-15596:Music File Open Error : maou_game_vehicle03.mp3
-15603:Music File Open Error : maou_game_vehicle03.mp3
-15610:Music File Open Error : maou_game_vehicle03.mp3
-15617:Music File Open Error : maou_game_vehicle03.mp3
-15623:Music File Open Error : maou_game_vehicle03.mp3
-15630:Music File Open Error : maou_game_vehicle03.mp3
-15637:Music File Open Error : maou_game_vehicle03.mp3
-15644:Music File Open Error : maou_game_vehicle03.mp3
-15651:Music File Open Error : maou_game_vehicle03.mp3
-15658:Music File Open Error : maou_game_vehicle03.mp3
-15665:Music File Open Error : maou_game_vehicle03.mp3
-15672:Music File Open Error : maou_game_vehicle03.mp3
-15679:Music File Open Error : maou_game_vehicle03.mp3
-15686:Music File Open Error : maou_game_vehicle03.mp3
-15693:Music File Open Error : maou_game_vehicle03.mp3
-15700:Music File Open Error : maou_game_vehicle03.mp3
-15707:Music File Open Error : maou_game_vehicle03.mp3
-15713:Music File Open Error : maou_game_vehicle03.mp3
-15720:Music File Open Error : maou_game_vehicle03.mp3
-15727:Music File Open Error : maou_game_vehicle03.mp3
-15734:Music File Open Error : maou_game_vehicle03.mp3
-15741:Music File Open Error : maou_game_vehicle03.mp3
-15748:Music File Open Error : maou_game_vehicle03.mp3
-15755:Music File Open Error : maou_game_vehicle03.mp3
-15762:Music File Open Error : maou_game_vehicle03.mp3
-15769:Music File Open Error : maou_game_vehicle03.mp3
-15776:Music File Open Error : maou_game_vehicle03.mp3
-15783:Music File Open Error : maou_game_vehicle03.mp3
-15790:Music File Open Error : maou_game_vehicle03.mp3
-15797:Music File Open Error : maou_game_vehicle03.mp3
-15804:Music File Open Error : maou_game_vehicle03.mp3
-15811:Music File Open Error : maou_game_vehicle03.mp3
-15818:Music File Open Error : maou_game_vehicle03.mp3
-15825:Music File Open Error : maou_game_vehicle03.mp3
-15832:Music File Open Error : maou_game_vehicle03.mp3
-15838:Music File Open Error : maou_game_vehicle03.mp3
-15845:Music File Open Error : maou_game_vehicle03.mp3
-15852:Music File Open Error : maou_game_vehicle03.mp3
-15859:Music File Open Error : maou_game_vehicle03.mp3
-15866:Music File Open Error : maou_game_vehicle03.mp3
-15873:Music File Open Error : maou_game_vehicle03.mp3
-15880:Music File Open Error : maou_game_vehicle03.mp3
-15887:Music File Open Error : maou_game_vehicle03.mp3
-15894:Music File Open Error : maou_game_vehicle03.mp3
-15901:Music File Open Error : maou_game_vehicle03.mp3
-15908:Music File Open Error : maou_game_vehicle03.mp3
-15915:Music File Open Error : maou_game_vehicle03.mp3
-15922:Music File Open Error : maou_game_vehicle03.mp3
-15929:Music File Open Error : maou_game_vehicle03.mp3
-15936:Music File Open Error : maou_game_vehicle03.mp3
-15943:Music File Open Error : maou_game_vehicle03.mp3
-15950:Music File Open Error : maou_game_vehicle03.mp3
-15957:Music File Open Error : maou_game_vehicle03.mp3
-15964:Music File Open Error : maou_game_vehicle03.mp3
-15971:Music File Open Error : maou_game_vehicle03.mp3
-15978:Music File Open Error : maou_game_vehicle03.mp3
-15984:Music File Open Error : maou_game_vehicle03.mp3
-15992:Music File Open Error : maou_game_vehicle03.mp3
-15998:Music File Open Error : maou_game_vehicle03.mp3
-16005:Music File Open Error : maou_game_vehicle03.mp3
-16012:Music File Open Error : maou_game_vehicle03.mp3
-16019:Music File Open Error : maou_game_vehicle03.mp3
-16026:Music File Open Error : maou_game_vehicle03.mp3
-16033:Music File Open Error : maou_game_vehicle03.mp3
-16040:Music File Open Error : maou_game_vehicle03.mp3
-16047:Music File Open Error : maou_game_vehicle03.mp3
-16054:Music File Open Error : maou_game_vehicle03.mp3
-16061:Music File Open Error : maou_game_vehicle03.mp3
-16067:Music File Open Error : maou_game_vehicle03.mp3
-16074:Music File Open Error : maou_game_vehicle03.mp3
-16081:Music File Open Error : maou_game_vehicle03.mp3
-16088:Music File Open Error : maou_game_vehicle03.mp3
-16095:Music File Open Error : maou_game_vehicle03.mp3
-16102:Music File Open Error : maou_game_vehicle03.mp3
-16109:Music File Open Error : maou_game_vehicle03.mp3
-16116:Music File Open Error : maou_game_vehicle03.mp3
-16123:Music File Open Error : maou_game_vehicle03.mp3
-16130:Music File Open Error : maou_game_vehicle03.mp3
-16137:Music File Open Error : maou_game_vehicle03.mp3
-16144:Music File Open Error : maou_game_vehicle03.mp3
-16151:Music File Open Error : maou_game_vehicle03.mp3
-16158:Music File Open Error : maou_game_vehicle03.mp3
-16165:Music File Open Error : maou_game_vehicle03.mp3
-16172:Music File Open Error : maou_game_vehicle03.mp3
-16179:Music File Open Error : maou_game_vehicle03.mp3
-16185:Music File Open Error : maou_game_vehicle03.mp3
-16192:Music File Open Error : maou_game_vehicle03.mp3
-16199:Music File Open Error : maou_game_vehicle03.mp3
-16206:Music File Open Error : maou_game_vehicle03.mp3
-16213:Music File Open Error : maou_game_vehicle03.mp3
-16220:Music File Open Error : maou_game_vehicle03.mp3
-16227:Music File Open Error : maou_game_vehicle03.mp3
-16234:Music File Open Error : maou_game_vehicle03.mp3
-16241:Music File Open Error : maou_game_vehicle03.mp3
-16248:Music File Open Error : maou_game_vehicle03.mp3
-16255:Music File Open Error : maou_game_vehicle03.mp3
-16262:Music File Open Error : maou_game_vehicle03.mp3
-16269:Music File Open Error : maou_game_vehicle03.mp3
-16276:Music File Open Error : maou_game_vehicle03.mp3
-16283:Music File Open Error : maou_game_vehicle03.mp3
-16290:Music File Open Error : maou_game_vehicle03.mp3
-16297:Music File Open Error : maou_game_vehicle03.mp3
-16304:Music File Open Error : maou_game_vehicle03.mp3
-16311:Music File Open Error : maou_game_vehicle03.mp3
-16318:Music File Open Error : maou_game_vehicle03.mp3
-16325:Music File Open Error : maou_game_vehicle03.mp3
-16331:Music File Open Error : maou_game_vehicle03.mp3
-16339:Music File Open Error : maou_game_vehicle03.mp3
-16345:Music File Open Error : maou_game_vehicle03.mp3
-16352:Music File Open Error : maou_game_vehicle03.mp3
-16359:Music File Open Error : maou_game_vehicle03.mp3
-16366:Music File Open Error : maou_game_vehicle03.mp3
-16373:Music File Open Error : maou_game_vehicle03.mp3
-16380:Music File Open Error : maou_game_vehicle03.mp3
-16387:Music File Open Error : maou_game_vehicle03.mp3
-16394:Music File Open Error : maou_game_vehicle03.mp3
-16401:Music File Open Error : maou_game_vehicle03.mp3
-16408:Music File Open Error : maou_game_vehicle03.mp3
-16415:Music File Open Error : maou_game_vehicle03.mp3
-16422:Music File Open Error : maou_game_vehicle03.mp3
-16429:Music File Open Error : maou_game_vehicle03.mp3
-16436:Music File Open Error : maou_game_vehicle03.mp3
-16442:Music File Open Error : maou_game_vehicle03.mp3
-16449:Music File Open Error : maou_game_vehicle03.mp3
-16456:Music File Open Error : maou_game_vehicle03.mp3
-16463:Music File Open Error : maou_game_vehicle03.mp3
-16470:Music File Open Error : maou_game_vehicle03.mp3
-16477:Music File Open Error : maou_game_vehicle03.mp3
-16484:Music File Open Error : maou_game_vehicle03.mp3
-16491:Music File Open Error : maou_game_vehicle03.mp3
-16498:Music File Open Error : maou_game_vehicle03.mp3
-16505:Music File Open Error : maou_game_vehicle03.mp3
-16512:Music File Open Error : maou_game_vehicle03.mp3
-16519:Music File Open Error : maou_game_vehicle03.mp3
-16526:Music File Open Error : maou_game_vehicle03.mp3
-16533:Music File Open Error : maou_game_vehicle03.mp3
-16540:Music File Open Error : maou_game_vehicle03.mp3
-16547:Music File Open Error : maou_game_vehicle03.mp3
-16554:Music File Open Error : maou_game_vehicle03.mp3
-16561:Music File Open Error : maou_game_vehicle03.mp3
-16568:Music File Open Error : maou_game_vehicle03.mp3
-16575:Music File Open Error : maou_game_vehicle03.mp3
-16581:Music File Open Error : maou_game_vehicle03.mp3
-16589:Music File Open Error : maou_game_vehicle03.mp3
-16596:Music File Open Error : maou_game_vehicle03.mp3
-16603:Music File Open Error : maou_game_vehicle03.mp3
-16609:Music File Open Error : maou_game_vehicle03.mp3
-16616:Music File Open Error : maou_game_vehicle03.mp3
-16624:Music File Open Error : maou_game_vehicle03.mp3
-16630:Music File Open Error : maou_game_vehicle03.mp3
-16637:Music File Open Error : maou_game_vehicle03.mp3
-16644:Music File Open Error : maou_game_vehicle03.mp3
-16651:Music File Open Error : maou_game_vehicle03.mp3
-16658:Music File Open Error : maou_game_vehicle03.mp3
-16665:Music File Open Error : maou_game_vehicle03.mp3
-16672:Music File Open Error : maou_game_vehicle03.mp3
-16679:Music File Open Error : maou_game_vehicle03.mp3
-16686:Music File Open Error : maou_game_vehicle03.mp3
-16692:Music File Open Error : maou_game_vehicle03.mp3
-16700:Music File Open Error : maou_game_vehicle03.mp3
-16706:Music File Open Error : maou_game_vehicle03.mp3
-16714:Music File Open Error : maou_game_vehicle03.mp3
-16720:Music File Open Error : maou_game_vehicle03.mp3
-16727:Music File Open Error : maou_game_vehicle03.mp3
-16734:Music File Open Error : maou_game_vehicle03.mp3
-16741:Music File Open Error : maou_game_vehicle03.mp3
-16748:Music File Open Error : maou_game_vehicle03.mp3
-16755:Music File Open Error : maou_game_vehicle03.mp3
-16762:Music File Open Error : maou_game_vehicle03.mp3
-16769:Music File Open Error : maou_game_vehicle03.mp3
-16776:Music File Open Error : maou_game_vehicle03.mp3
-16783:Music File Open Error : maou_game_vehicle03.mp3
-16790:Music File Open Error : maou_game_vehicle03.mp3
-16797:Music File Open Error : maou_game_vehicle03.mp3
-16804:Music File Open Error : maou_game_vehicle03.mp3
-16811:Music File Open Error : maou_game_vehicle03.mp3
-16818:Music File Open Error : maou_game_vehicle03.mp3
-16825:Music File Open Error : maou_game_vehicle03.mp3
-16832:Music File Open Error : maou_game_vehicle03.mp3
-16838:Music File Open Error : maou_game_vehicle03.mp3
-16845:Music File Open Error : maou_game_vehicle03.mp3
-16852:Music File Open Error : maou_game_vehicle03.mp3
-16859:Music File Open Error : maou_game_vehicle03.mp3
-16866:Music File Open Error : maou_game_vehicle03.mp3
-16873:Music File Open Error : maou_game_vehicle03.mp3
-16880:Music File Open Error : maou_game_vehicle03.mp3
-16887:Music File Open Error : maou_game_vehicle03.mp3
-16894:Music File Open Error : maou_game_vehicle03.mp3
-16901:Music File Open Error : maou_game_vehicle03.mp3
-16908:Music File Open Error : maou_game_vehicle03.mp3
-16915:Music File Open Error : maou_game_vehicle03.mp3
-16922:Music File Open Error : maou_game_vehicle03.mp3
-16929:Music File Open Error : maou_game_vehicle03.mp3
-16935:Music File Open Error : maou_game_vehicle03.mp3
-16942:Music File Open Error : maou_game_vehicle03.mp3
-16950:Music File Open Error : maou_game_vehicle03.mp3
-16956:Music File Open Error : maou_game_vehicle03.mp3
-16964:Music File Open Error : maou_game_vehicle03.mp3
-16970:Music File Open Error : maou_game_vehicle03.mp3
-16977:Music File Open Error : maou_game_vehicle03.mp3
-16984:Music File Open Error : maou_game_vehicle03.mp3
-16991:Music File Open Error : maou_game_vehicle03.mp3
-16998:Music File Open Error : maou_game_vehicle03.mp3
-17005:Music File Open Error : maou_game_vehicle03.mp3
-17012:Music File Open Error : maou_game_vehicle03.mp3
-17019:Music File Open Error : maou_game_vehicle03.mp3
-17026:Music File Open Error : maou_game_vehicle03.mp3
-17033:Music File Open Error : maou_game_vehicle03.mp3
-17040:Music File Open Error : maou_game_vehicle03.mp3
-17047:Music File Open Error : maou_game_vehicle03.mp3
-17054:Music File Open Error : maou_game_vehicle03.mp3
-17060:Music File Open Error : maou_game_vehicle03.mp3
-17067:Music File Open Error : maou_game_vehicle03.mp3
-17074:Music File Open Error : maou_game_vehicle03.mp3
-17081:Music File Open Error : maou_game_vehicle03.mp3
-17088:Music File Open Error : maou_game_vehicle03.mp3
-17095:Music File Open Error : maou_game_vehicle03.mp3
-17102:Music File Open Error : maou_game_vehicle03.mp3
-17109:Music File Open Error : maou_game_vehicle03.mp3
-17116:Music File Open Error : maou_game_vehicle03.mp3
-17123:Music File Open Error : maou_game_vehicle03.mp3
-17130:Music File Open Error : maou_game_vehicle03.mp3
-17138:Music File Open Error : maou_game_vehicle03.mp3
-17143:Music File Open Error : maou_game_vehicle03.mp3
-17151:Music File Open Error : maou_game_vehicle03.mp3
-17158:Music File Open Error : maou_game_vehicle03.mp3
-17366:Music File Open Error : maou_game_vehicle03.mp3
-17373:Music File Open Error : maou_game_vehicle03.mp3
-17380:Music File Open Error : maou_game_vehicle03.mp3
-17387:Music File Open Error : maou_game_vehicle03.mp3
-17394:Music File Open Error : maou_game_vehicle03.mp3
-17401:Music File Open Error : maou_game_vehicle03.mp3
-17408:Music File Open Error : maou_game_vehicle03.mp3
-17415:Music File Open Error : maou_game_vehicle03.mp3
-17422:Music File Open Error : maou_game_vehicle03.mp3
-17429:Music File Open Error : maou_game_vehicle03.mp3
-17436:Music File Open Error : maou_game_vehicle03.mp3
-17443:Music File Open Error : maou_game_vehicle03.mp3
-17449:Music File Open Error : maou_game_vehicle03.mp3
-17456:Music File Open Error : maou_game_vehicle03.mp3
-17463:Music File Open Error : maou_game_vehicle03.mp3
-17470:Music File Open Error : maou_game_vehicle03.mp3
-17477:Music File Open Error : maou_game_vehicle03.mp3
-17484:Music File Open Error : maou_game_vehicle03.mp3
-17491:Music File Open Error : maou_game_vehicle03.mp3
-17498:Music File Open Error : maou_game_vehicle03.mp3
-17505:Music File Open Error : maou_game_vehicle03.mp3
-17512:Music File Open Error : maou_game_vehicle03.mp3
-17519:Music File Open Error : maou_game_vehicle03.mp3
-17526:Music File Open Error : maou_game_vehicle03.mp3
-17533:Music File Open Error : maou_game_vehicle03.mp3
-17540:Music File Open Error : maou_game_vehicle03.mp3
-17547:Music File Open Error : maou_game_vehicle03.mp3
-17555:Music File Open Error : maou_game_vehicle03.mp3
-17561:Music File Open Error : maou_game_vehicle03.mp3
-17568:Music File Open Error : maou_game_vehicle03.mp3
-17575:Music File Open Error : maou_game_vehicle03.mp3
-17581:Music File Open Error : maou_game_vehicle03.mp3
-17588:Music File Open Error : maou_game_vehicle03.mp3
-17595:Music File Open Error : maou_game_vehicle03.mp3
-17602:Music File Open Error : maou_game_vehicle03.mp3
-17609:Music File Open Error : maou_game_vehicle03.mp3
-17616:Music File Open Error : maou_game_vehicle03.mp3
-17623:Music File Open Error : maou_game_vehicle03.mp3
-17630:Music File Open Error : maou_game_vehicle03.mp3
-19211:ウインドウを閉じようとしています
-19216:ウインドウが破棄されようとしています
-19217:ソフトを終了する準備が整いました
-19218:フォントの初期化を行います
-19218:フォントの初期化は正常に終了しました
-19244:d3d11.dll の解放 1
-19245:dxgi.dll の解放 1
-19247:Direct3D11 のオブジェクト数を出力
-19247:Direct3D11 のオブジェクト合計数 : 0
-19248:DirectInput 関連の終了処理... 完了
-19249:サウンド関連の終了処理... 完了
-19258:ウィンドウ関連の終了処理... 完了
-19324:ＣＯＭを終了... 完了
-19324:
-19325:Alloc memory dump
-19325:	Total size:0(0.000kb)  Alloc num:0
-19325:
+10:	メモリ総量:16163.30MB  空きメモリ領域:7891.44MB 
+11:	タイマーの精度を検査します
+11:	精度結果 更新回数 マルチメディアタイマー：0  パフォーマンスカウンター：60
+11:	 パフォーマンスカウンターを使用します タイマー精度 : 10000.000000 KHz 
+15:	 
+16:	ソフトの二重起動検査... 二重起動はされていませんでした
+17:	ウインドウクラスを登録します... 登録に成功しました
+17:	ウインドウモード起動用のウインドウを作成します
+17:	ディスプレイ情報のセットアップ開始
+18:		モニターの数：1  ディスプレイデバイスの数：8
+18:		No.0  モニター名：\\.\DISPLAY1　1920x1080　32bit　144Hz  96x96dpi
+25:	ディスプレイ情報のセットアップ完了
+27:	ウインドウ矩形 ( 544, 189 )-( 1360, 828 )
+29:	ウインドウの作成に成功しました
+30:	ウインドウを表示します
+49:	ＩＭＥを無効にしました
+49:	ウインドウスタイルをウインドウモード用に変更します... 完了
+79:	XInput DLL の読み込み中... 成功
+84:	DirectInput関係初期化処理
+84:		DirectInput8 の取得を試みます...成功
+98:			引き続き初期化処理... 初期化成功
+100:		ジョイパッドの初期化... 
+101:			XInput 対応コントローラーのチェックを開始します
+101:				XInput 対応コントローラー No.0 をチェック
+101:				XInput 対応コントローラー No.0 の接続は確認できませんでした
+101:				XInput 対応コントローラー No.1 をチェック
+102:				XInput 対応コントローラー No.1 の接続は確認できませんでした
+102:				XInput 対応コントローラー No.2 をチェック
+102:				XInput 対応コントローラー No.2 の接続は確認できませんでした
+103:				XInput 対応コントローラー No.3 をチェック
+103:				XInput 対応コントローラー No.3 の接続は確認できませんでした
+103:			XInput 対応コントローラーのチェック完了
+103:			DirectInput 対応ジョイパッドの列挙を開始します
+108:			DirectInput 対応ジョイパッドの列挙終了
+109:		ジョイパッドの初期化は正常に終了しました
+109:		マウスデバイスの初期化... 初期化成功
+110:		キーボードデバイスの初期化... 初期化成功
+112:	DirectInput 関連の初期化は正常に終了しました
+116:	WASAPI の初期化を行います
+121:		デバイス名 : Speakers (3- Realtek(R) Audio)
+184:		デフォルト遅延時間 : 10.000 ms
+185:		最小遅延時間       : 3.000 ms
+185:		遅延時間           : 10.000 ms
+187:		チャンネル数  　   : 2 ch
+187:		量子化ビット深度   : 32 bit
+187:		有効ビット深度　   : 32 bit
+188:		サンプリングレート : 48000 Hz
+188:		データ形式         : 浮動小数点型
+296:		動作モード         : 共有モード
+296:	WASAPI の初期化は正常に終了しました
+300:	d3d11.dll の読み込み.... 成功
+303:	dxgi.dll の読み込み.... 成功
+304:	API CreateDXGIFactory2 のアドレスを取得します.... 成功
+304:	IDXGIFactory2 を作成します.... 成功
+321:	API CreateDXGIFactory6 のアドレスを取得します.... 成功
+322:	IDXGIAdapter を列挙
+322:		Adapter No.0 Desc:NVIDIA GeForce RTX 3050 Laptop GPU  VRAM:3072MB
+322:		Adapter No.1 Desc:Intel(R) UHD Graphics  VRAM:128MB
+322:			Output Device No.0 Name:\\.\DISPLAY1 ( 0, 0 )-( 1920, 1080 )
+323:		Adapter No.2 Desc:Microsoft Basic Render Driver  VRAM:0MB
+323:	API D3D11CreateDevice のアドレスを取得します.... 成功
+323:	IDXGIAdapter を取得します.... 成功
+323:	IDXGIAdapter1 を取得します.... 成功
+324:	IDXGIAdapter2 を取得します.... 成功
+325:	IDXGIAdapter3 を取得します.... 成功
+325:	IDXGIAdapter4 を取得します.... 成功
+325:	Direct3D 11 FeatureLevel 11_0 以上を対象とします
+326:	ID3D11Device オブジェクトを取得します.... 成功
+360:	IDXGIDevice1 を取得します.... 成功
+361:	IDXGIDevice1->SetMaximunFrameLatency( 1 ); を実行しました
+361:	[ウインドウモード 800x600 ( 560, 227 )-( 1360, 827 )]
+362:	IDXGISwapChain2 を作成します.... 成功
+364:	IDXGIFactory2->CreateSwapChainForHwnd の戻り値：0x00000000
+364:	IDXGIOutput を取得します.... 成功
+365:	Graphics Device:Intel(R) UHD Graphics
+365:	画面のフォーマットは DXGI_FORMAT_R8G8B8A8_UNORM です
+365:	16bit Zバッファフォーマットは DXGI_FORMAT_D16_UNORM です
+366:	24bit Zバッファフォーマットは DXGI_FORMAT_D24_UNORM_S8_UINT です
+366:	32bit Zバッファフォーマットは DXGI_FORMAT_D32_FLOAT です
+366:	16bit カラーフォーマットは DXGI_FORMAT_B5G6R5_UNORM です
+366:	32bit カラーフォーマットは DXGI_FORMAT_B8G8R8X8_UNORM です
+366:	アルファ付き 16bit カラーフォーマットは DXGI_FORMAT_B4G4R4A4_UNORM です
+366:	アルファ付き 32bit カラーフォーマットは DXGI_FORMAT_R8G8B8A8_UNORM です
+367:	アルファテスト用 16bit カラーフォーマットは DXGI_FORMAT_B5G5R5A1_UNORM です
+367:	アルファテスト用 32bit カラーフォーマットは DXGI_FORMAT_R8G8B8A8_UNORM です
+367:	ＤＸＴ１テクスチャフォーマットは DXGI_FORMAT_BC1_UNORM です
+367:	ＤＸＴ２テクスチャフォーマットは使えません
+367:	ＤＸＴ３テクスチャフォーマットは DXGI_FORMAT_BC2_UNORM です
+367:	ＤＸＴ４テクスチャフォーマットは使えません
+368:	ＤＸＴ５テクスチャフォーマットは DXGI_FORMAT_BC3_UNORM です
+368:	BC7_UNORM テクスチャフォーマットは DXGI_FORMAT_BC7_UNORM です
+368:	BC7_UNORM_SRGB テクスチャフォーマットは DXGI_FORMAT_BC7_UNORM_SRGB です
+368:	ABGR 整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16B16A16_UNORM です
+368:	ABGR 浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16B16A16_FLOAT です
+368:	ABGR 浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32G32B32A32_FLOAT です
+368:	１チャンネル整数 8 ビット型カラーフォーマットは DXGI_FORMAT_R8_UNORM です
+369:	１チャンネル整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16_UNORM です
+369:	１チャンネル浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16_FLOAT です
+369:	１チャンネル浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32_FLOAT です
+369:	２チャンネル整数 8 ビット型カラーフォーマットは DXGI_FORMAT_R8G8_UNORM です
+369:	２チャンネル整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16_UNORM です
+370:	２チャンネル浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16_FLOAT です
+370:	２チャンネル浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32G32_FLOAT です
+370:	描画用 16bit カラーフォーマットは DXGI_FORMAT_B5G6R5_UNORM です
+370:	描画用 32bit カラーフォーマットは DXGI_FORMAT_B8G8R8X8_UNORM です
+370:	描画用アルファ付き 32bit カラーフォーマットは DXGI_FORMAT_R8G8B8A8_UNORM です
+370:	描画用 ABGR 整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16B16A16_UNORM です
+371:	描画用 ABGR 浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16B16A16_FLOAT です
+371:	描画用 ABGR 浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32G32B32A32_FLOAT です
+371:	描画用１チャンネル整数 8 ビット型カラーフォーマットは DXGI_FORMAT_R8_UNORM です
+371:	描画用１チャンネル整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16_UNORM です
+371:	描画用１チャンネル浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16_FLOAT です
+372:	描画用１チャンネル浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32_FLOAT です
+372:	描画用２チャンネル整数 8 ビット型カラーフォーマットは DXGI_FORMAT_R8G8_UNORM です
+372:	描画用２チャンネル整数 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16_UNORM です
+372:	描画用２チャンネル浮動小数点 16 ビット型カラーフォーマットは DXGI_FORMAT_R16G16_FLOAT です
+372:	描画用２チャンネル浮動小数点 32 ビット型カラーフォーマットは DXGI_FORMAT_R32G32_FLOAT です
+373:	使用する機能レベル:D3D_FEATURE_LEVEL_11_1
+373:	同時にレンダリングできるバッファの数:8
+373:	最大テクスチャサイズ　幅:16384 高さ:16384
+373:	標準描画用の頂点バッファの作成.... 成功
+374:	シェーダーコード関係の初期化.... 成功
+388:	各種シェーダー用定数バッファの作成.... 成功
+389:	各種 ID3D11InputLayout の作成.... 成功
+414:	画像の単純転送処理の初期化... 成功
+414:	深度バッファを作成します.... 成功
+417:	フォントの初期化を行います
+417:	フォントの初期化は正常に終了しました
+456:	文字コードバッファの初期化を行います... 完了しました
+463:ＤＸライブラリの初期化処理終了
+470:File Open Error : C:\Users\G2333\source\repos\Jam2_5\maou_se_battle16.mp3
+470:Sound File Load Error : C:\Users\G2333\source\repos\Jam2_5\maou_se_battle16.mp3
+536:画像ファイル C:\Users\G2333\source\repos\Jam2_5\effect.png のロードに失敗しました
+537:画像ファイル C:\Users\G2333\source\repos\Jam2_5\BG0.png がありません
+537:画像ファイル C:\Users\G2333\source\repos\Jam2_5\BG1.png がありません
+538:画像ファイル C:\Users\G2333\source\repos\Jam2_5\BG2.png がありません
+541:画像ファイル C:\Users\G2333\source\repos\Jam2_5\pushenter.png がありません
+541:Music File Open Error : maou_game_boss03.mp3
+2413:Music File Open Error : maou_game_vehicle03.mp3
+6154:Music File Open Error : maou_game_vehicle03.mp3
+7695:Music File Open Error : maou_game_vehicle03.mp3
+11866:ウインドウを閉じようとしています
+11871:ウインドウが破棄されようとしています
+11871:ソフトを終了する準備が整いました
+11872:フォントの初期化を行います
+11873:フォントの初期化は正常に終了しました
+11901:d3d11.dll の解放 1
+11902:dxgi.dll の解放 1
+11904:Direct3D11 のオブジェクト数を出力
+11904:Direct3D11 のオブジェクト合計数 : 0
+11904:DirectInput 関連の終了処理... 完了
+11906:サウンド関連の終了処理... 完了
+11912:ウィンドウ関連の終了処理... 完了
+11978:ＣＯＭを終了... 完了
+11978:
+11978:Alloc memory dump
+11978:	Total size:0(0.000kb)  Alloc num:0
+11978:

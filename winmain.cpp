@@ -190,6 +190,7 @@ void a()
 		if (CheckHitKey(KEY_INPUT_RETURN) == 1)
 		{
 			initstage3Enemy();
+			aa++;
 			scene = Game;
 			PlayMusic("maou_game_vehicle03.mp3", DX_PLAYTYPE_LOOP);
 		}
