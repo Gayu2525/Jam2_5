@@ -67,6 +67,7 @@ void updatePlayer()
 	//弾を撃つ処理
 	if (CheckHitKey(KEY_INPUT_N) == 1)
 	{
+		player.x++;
 		//弾が無効なときのみ初期値をセットし有効にする
 		for (int i = 0; i < ShotNum; i++)
 		{
@@ -104,6 +105,12 @@ void updatePlayer()
 			}
 		}
 	}
+
+	if (CheckHitKey(KEY_INPUT_N) == 1)
+	{
+		player.x = 0;
+	}
+
 	//銃を冷やす処理
 	if (player.cooltime > 0) {
 		player.cooltime--;
