@@ -14,6 +14,7 @@ void titleUpdate();
 void update();//更新関数のプロトタイプ宣言
 void draw();//描画処理
 void a();//ステージとステージの間に挟むやつ
+int aa = 0;
 
 enum GameScene
 {
@@ -50,7 +51,15 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		{
 			update();//更新処理の呼び出し
 
-			if (clearflag1 == true)
+			if (clearflag1 == true&&aa==0)
+			{
+				scene = A;
+			}
+			if (clearflag2 == true && aa == 1)
+			{
+				scene = A;
+			}
+			if (clearflag3 == true && aa == 2)
 			{
 				scene = A;
 			}
@@ -118,10 +127,10 @@ void update()
 		updatestage1Enemy();
 	}
 	if (clearflag1 == true&&clearflag2==false) {
-		updatestage1Enemy();
+		updatestage2Enemy();
 	}
 	if (clearflag2 == true) {
-		updatestage1Enemy();
+		updatestage3Enemy();
 	}
 	//エフェクトの更新
 	updateEffect();
@@ -164,17 +173,25 @@ void a()
 {
 	if (clearflag1 == true&&clearflag2==false)
 	{
-		initstage2Enemy();
 		DrawFormatString(350, 300, GetColor(255, 255, 255), "1面クリア！Enterで2面へ");
+
+		if (CheckHitKey(KEY_INPUT_RETURN) == 1)
+		{
+			initstage2Enemy();
+			aa++;
+			scene = Game;
+			PlayMusic("maou_game_vehicle03.mp3", DX_PLAYTYPE_LOOP);
+		}
 	}
 	if (clearflag2 == true)
 	{
-		initstage3Enemy();
 		DrawFormatString(350, 300, GetColor(255, 255, 255), "2面クリア！Enterで3面へ");
-	}
-	if (CheckHitKey(KEY_INPUT_RETURN) == 1)
-	{
-		scene = Game;
-		PlayMusic("maou_game_vehicle03.mp3", DX_PLAYTYPE_LOOP);
+
+		if (CheckHitKey(KEY_INPUT_RETURN) == 1)
+		{
+			initstage3Enemy();
+			scene = Game;
+			PlayMusic("maou_game_vehicle03.mp3", DX_PLAYTYPE_LOOP);
+		}
 	}
 }

@@ -42,6 +42,9 @@
     <ClCompile Include="stage2enemy.cpp">
       <Filter>ソースファイル</Filter>
     </ClCompile>
+    <ClCompile Include="stage3enemy.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shot.h">

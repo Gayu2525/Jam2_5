@@ -95,6 +95,7 @@
     <ClCompile Include="player.cpp" />
     <ClCompile Include="shot.cpp" />
     <ClCompile Include="stage2enemy.cpp" />
+    <ClCompile Include="stage3enemy.cpp" />
     <ClCompile Include="UI.cpp" />
     <ClCompile Include="winmain.cpp" />
   </ItemGroup>
