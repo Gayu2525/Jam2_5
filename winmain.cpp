@@ -138,7 +138,15 @@ void draw()
 	//背景スプライトの描画
 	drawBg();
 	//敵の描画
-	drawstage1Enemy();
+	if (clearflag1 == false) {
+		drawstage1Enemy();
+	}
+	if (clearflag1 == true && clearflag2 == false) {
+		drawstage2Enemy();
+	}
+	if (clearflag2 == true) {
+		drawstage3Enemy();
+	}
 	//プレイヤーの描画
 	drawPlayer();
 	//弾の描画
@@ -161,6 +169,7 @@ void a()
 	}
 	if (clearflag2 == true)
 	{
+		initstage3Enemy();
 		DrawFormatString(350, 300, GetColor(255, 255, 255), "2面クリア！Enterで3面へ");
 	}
 	if (CheckHitKey(KEY_INPUT_RETURN) == 1)
