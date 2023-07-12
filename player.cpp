@@ -107,13 +107,13 @@ void updatePlayer()
 		}
 	}
 
-	if (player.nage%30<=10) {
+	if (player.nage%30<10) {
 		playerimg = LoadGraph("player_1.png");
 	}
-	if (player.nage % 30 < 20&&player.nage%30>10) {
+	if (player.nage % 30 < 20&&player.nage%30>=10) {
 		playerimg = LoadGraph("˜JŠî“Š‚°.png");
 	}
-	if (player.nage % 30 > 20) {
+	if (player.nage % 30 >= 20) {
 		playerimg = LoadGraph("˜JŠî\‚¦.png");
 	}
 
@@ -146,10 +146,10 @@ void drawPlayer()
 	if (player.inv % 5 < 2) {
 		DrawCircle(player.x, player.y, player.r, player.color, false);
 
-		if (player.nage % 30 <= 10) {
+		if (player.nage % 30 < 10) {
 			DrawGraph(player.x - 115, player.y - 60, playerimg, true);
 		}
-		if (player.nage % 30 > 10) {
+		if (player.nage % 30 >= 10) {
 			DrawGraph(player.x - 45, player.y - 50, playerimg, true);
 		}
 
