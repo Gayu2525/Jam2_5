@@ -54,12 +54,12 @@ void initstage1Enemy()
 	enemy[2].color = GetColor(255, 0, 0);
 	enemy[2].fill = true;
 	enemy[2].enable = true;
-	enemy[2].vx = -2.0;
+	enemy[2].vx = -1;
 	enemy[2].vy = 0.0;
 	enemy[2].onecount = true;
 	enemy[2].hakkenntime = 5;
 	enemy[2].hp = 1;
-	enemy[2].type = usi;
+	enemy[2].type = niwatori;
 
 	//2‘Ì–Ú‚Ì“G
 	enemy[3].x = 2500;
@@ -68,12 +68,12 @@ void initstage1Enemy()
 	enemy[3].color = GetColor(255, 0, 0);
 	enemy[3].fill = true;
 	enemy[3].enable = true;
-	enemy[3].vx = -2.0;
+	enemy[3].vx = -1;
 	enemy[3].vy = 0.0;
 	enemy[3].onecount = true;
 	enemy[3].hakkenntime = 5;
 	enemy[3].hp = 1;
-	enemy[3].type = usi;
+	enemy[3].type = niwatori;
 
 	//3‘Ì–Ú‚Ì“G
 	enemy[4].x = 3000;
@@ -87,7 +87,7 @@ void initstage1Enemy()
 	enemy[4].onecount = true;
 	enemy[4].hakkenntime = 5;
 	enemy[4].hp = 1;
-	enemy[4].type = usi;
+	enemy[4].type = ENEMY1;
 
 	//2‘Ì–Ú‚Ì“G
 	enemy[5].x = 3500;
@@ -101,7 +101,7 @@ void initstage1Enemy()
 	enemy[5].onecount = true;
 	enemy[5].hakkenntime = 5;
 	enemy[5].hp = 1;
-	enemy[5].type = usi;
+	enemy[5].type = ENEMY1;
 
 	//3‘Ì–Ú‚Ì“G
 	enemy[6].x = 4000;
@@ -264,10 +264,9 @@ void updatestage1Enemy()
 			if (canEnemyShot(enemy[i]))
 			{
 				//O–{ƒVƒ‡ƒbƒg
-				if (enemy[i].type == ENEMY1) {
-					straightShot(175, enemy[i], 0);
+				if (enemy[i].type == niwatori) {
 					straightShot(180, enemy[i], 0);
-					straightShot(185, enemy[i], 0);
+					enemy[i].cooltime = 150;
 				}
 				if (enemy[i].type == ENEMY2) {
 					straightShot(180, enemy[i], -10);
@@ -283,8 +282,9 @@ void updatestage1Enemy()
 					straightShot(180, enemy[i], -10);
 					straightShot(180, enemy[i], 10);
 				}
-				if (enemy[i].type == usi && player.x + 500 > enemy[i].x) {
+				if (enemy[i].type == usi && player.x + 500 > enemy[i].x || enemy[i].hakkenntime < 5) {
 					enemy[i].hakkenntime--;
+					enemy[i].cooltime = 20;
 					if (enemy[i].hakkenntime > 0) {
 						enemy[i].vx = 0;
 					}
@@ -292,7 +292,7 @@ void updatestage1Enemy()
 						tossin(enemy[i]);
 					}
 				}
-				enemy[i].cooltime = 30;
+				
 			}
 
 			if (isHit(player, enemy[i]) && player.hp == 0)
