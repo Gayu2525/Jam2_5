@@ -12,7 +12,8 @@ enum EnemyType
 	ENEMY2,//敵タイプ２
 	ENEMY3,//敵タイプ３
 	ENEMY4,//敵タイプ４
-	ENEMY5 //敵タイプ５
+	ENEMY5, //敵タイプ５
+	usi, niwatori,
 };
 struct MovePattern
 {
@@ -34,6 +35,8 @@ struct En
 	double vvy;//縦の移動量の増量
 	bool enable;//有効フラグ（生きてるか、死んでるか）
 	int cooltime;//連射できないようにするタイマー
+	bool onecount;//一回だけ回す用の変数
+	int hakkenntime;//見つかった時に止まるようにする
 	int counter;
 	int spawnTiming;//出現タイミング
 	std::map<int, MovePattern> pattern;
